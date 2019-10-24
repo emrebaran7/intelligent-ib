@@ -1,7 +1,6 @@
-import { SSL_OP_SSLEAY_080_CLIENT_DH_BUG } from "constants";
 
 export const getIpoFeesByYear = (data) => {
-    const ipoFeesPerDeal = new Array;
+    const ipoFeesPerDeal = new Array
 
     for (let i = 0; i < data.length; i++) {
         let year = data[i].date_filed.slice(0,4);
