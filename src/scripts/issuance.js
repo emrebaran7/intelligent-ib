@@ -1,14 +1,7 @@
 import { SSL_OP_SSLEAY_080_CLIENT_DH_BUG } from "constants";
 
-// function importData() {
-//     d3.json("/assets/data/processed/data.json", function(data) {
-//         console.log(data);
-//     })
-// }
-
-
 export const getIpoFeesByYear = (data) => {
-    const ipoFeesByYear = new Array
+    const ipoFeesPerDeal = new Array;
 
     for (let i = 0; i < data.length; i++) {
         let year = data[i].date_filed.slice(0,4);
@@ -25,11 +18,25 @@ export const getIpoFeesByYear = (data) => {
         };
 
         let commissionLineItem = { [year]: commission / 1000000 };
-        ipoFeesbyYear.push(commissionLineItem);
+        ipoFeesPerDeal.push(commissionLineItem);
     };
 
-    for (let y = 0; y < ipoFeesbyYear.length ; y++) {
-        ipoFeesByYear[y]
+    let ipoFeesByYear = {
+        "2013": 0,
+        "2014": 0,
+        "2015": 0,
+        "2016": 0,
+        "2017": 0,
+        "2018": 0,
+        "2019": 0,
+    }
+
+    for (let y = 0; y < ipoFeesPerDeal.length ; y++) {
+        let key = Object.keys(ipoFeesPerDeal[y])
+        let value = parseInt(Object.values(ipoFeesPerDeal[y]))
+        ipoFeesByYear[key] += value;
     };
+    
+    return ipoFeesByYear;
 }
 
