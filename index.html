@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./dist/main.css">
-    <script src="https://d3js.org/d3.v4.js"></script>
+    <script src="https://d3js.org/d3.v5.js"></script>
     <title>Intelligent IB</title>
 </head>
 
@@ -14,29 +14,28 @@
     <h1>Intelligent IB</h1>
     <div class="analysis-selector">
         <h3>Select Analysis Type:</h3>
-        <form>
+        <form id="analysis-type-selector"> 
             <input type="radio" name="analysis-type" value="sector"> Sector</input>
             <input type="radio" name="analysis-type" value="issuer"> Issuer</input>
         </form>
     </div>
     
     <br>
-
-    <div id="app"></div>
-
-    <form autocomplete="off">
-        <div class="autocomplete">
-            <input type="text" name="myCompany" id="myCompanyInput" placeholder="Company Name">
-            <input type="submit" >
-        </div>
-    </form>
-
-    <form autocomplete="off">
-        <div class="autocomplete">
-            <input type="text" name="mySector" id="mySectorInput" placeholder="Sector Name">
-            <input type="submit">
-        </div>
-    </form>
+    <div class="search-bar"> 
+        <form autocomplete="off" id="company-search-form" style="visibility:hidden">
+            <div class="autocomplete">
+                <input type="text" name="myCompany" id="myCompanyInput" placeholder="Company Name">
+                <input type="submit" >
+            </div>
+        </form>
+    
+        <form autocomplete="off" id="sector-search-form" style="visibility:hidden">
+            <div class="autocomplete">
+                <input type="text" name="mySector" id="mySectorInput" placeholder="Sector Name" >
+                <input type="submit">
+            </div>
+        </form>
+    </div>
 
     <section class="ipo-fees-by-year-section">
         <div ></div>

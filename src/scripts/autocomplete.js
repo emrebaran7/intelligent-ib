@@ -11,7 +11,7 @@ export const autocomplete = (inp, arr) => {
         a = document.createElement("DIV");
         a.setAttribute("id", this.id + "autocomplete-list");
         a.setAttribute("class", "autocomplete-items");
-        
+         
         this.parentNode.appendChild(a);
 
         for (i = 0; i < arr.length; i++){
