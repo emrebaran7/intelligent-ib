@@ -3,7 +3,7 @@ require 'byebug'
 require 'date'
 
 module IPOList
-    @table = CSV.parse(File.read("assets/data/raw/ipo_database.csv"), headers: true)
+    @table = CSV.parse(File.read("/Users/emreersolmaz/Desktop/Intelligent-IB/assets/data/raw/ipo_database.csv"), headers: true)
     @file_url_table = []
 
     def self.get_parsed_table
@@ -16,8 +16,8 @@ module IPOList
             url_list_item[:doc_id] = doc_id
             url_list_item[:file_path] = url
             url_list_item[:date_filed] = DateTime.parse(row[2])
-            url_list_item[:company_name] = row[1]
-            url_list_item[:CIK] = row[0]
+            # url_list_item[:company_name] = row[1]
+            # url_list_item[:CIK] = row[0]
             @file_url_table << url_list_item
         end
         

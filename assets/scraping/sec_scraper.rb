@@ -14,7 +14,19 @@ class String
     end
 end
 
-## get parsed tables
+def get_company_info(sec_header)
+    company_info = {:company_name => nil, :CIK => nil, :SIC => nil}
+    parsed_sec_header = sec_header.text.gsub('\n','').split("\t").reject{|el| el == ""}
+    parsed_sec_header.each_index do |idx|
+        company_info[:company_name] = parsed_sec_header[idx + 1].delete("\n") if parsed_sec_header[idx] == "COMPANY CONFORMED NAME:"
+        company_info[:CIK] = parsed_sec_header[idx + 1].delete("\n") if parsed_sec_header[idx] == "CENTRAL INDEX KEY:"
+        company_info[:SIC] = parsed_sec_header[idx + 1].delete("\n").split("[")[-1][0..-2] if parsed_sec_header[idx] == "STANDARD INDUSTRIAL CLASSIFICATION:"  
+    end
+    
+    return company_info
+end
+
+# get parsed tables
 def get_parsed_tables(tables)
     parsed_tables = []
     tables.each do |table|
@@ -34,7 +46,7 @@ def get_parsed_tables(tables)
     parsed_tables
 end
 
-### get_issuance_info
+# get_issuance_info
 def get_issuance_info(parsed_tables, page_url)
     issuance_tables = []
 
@@ -81,7 +93,7 @@ def get_issuance_info(parsed_tables, page_url)
     offering_details
 end
 
-## get_underwriting_info
+# get_underwriting_info
 def get_underwriting_info(parsed_tables, page_url)
     underwriting_tables = []
 
@@ -163,18 +175,20 @@ ipos.each_with_index do |row,i|
     page_url = row[:file_path]
     page = HTTParty.get(page_url)
     document = Nokogiri::HTML(page)
+    sec_header = document.search("sec-header")
     tables = document.search('table')
     parsed_tables = get_parsed_tables(tables)
     current_parse_idx = "(" + (i + 1).to_s + "/" + ipos.length.to_s + ")"
+    company_info = get_company_info(sec_header)
 
     begin
         issuance_info = get_issuance_info(parsed_tables, page_url)
     rescue => exception
         errors[:issuance_parse_error] << page_url
         issuance_info = {
-            :price_to_public => null, 
-            :underwriting_discount_and_commissions => null, 
-            :proceeds_to_firm => null
+            :price_to_public => nil, 
+            :underwriting_discount_and_commissions => nil, 
+            :proceeds_to_firm => nil
         }
         p "Issuance parse error: " + current_parse_idx + " " + page_url
     end
@@ -194,8 +208,13 @@ ipos.each_with_index do |row,i|
     underwriting_info.each do |k,v|
         row[k] = v
     end
-
+    
+    company_info.each do |k,v|
+        row[k] = v
+    end
+    
     results.push(row)
+
     p "Parse succesful!: " + current_parse_idx + " " + page_url unless errors[:issuance_parse_error].include?(page_url) || errors[:underwriting_parse_error].include?(page_url)
 end
 

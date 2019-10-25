@@ -1,5 +1,6 @@
 import { getCompanies } from "./scripts/companies";
 import { autocomplete } from "./scripts/autocomplete";
+import { majorSectorGroups } from './scripts/sectors';
 import { displayForm } from "./scripts/displayForm";
 import { getIpoFeesByYear } from "./scripts/issuance";
 import { initialBarChart } from "./scripts/initialBarChart";
@@ -14,8 +15,7 @@ const companies = [...new Set(getCompanies(data))];
 autocomplete(document.getElementById("myCompanyInput"), companies);
 
 //Search Bar for Sectors
-const sectors = [...new Set(getCompanies(data))];
-autocomplete(document.getElementById("mySectorInput"), sectors);
+autocomplete(document.getElementById("mySectorInput"), majorSectorGroups);
 
 //barchart
 initialBarChart(dataset);
