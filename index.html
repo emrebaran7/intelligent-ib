@@ -12,8 +12,34 @@
 
 <body>
     <h1>Intelligent IB</h1>
+    <div class="analysis-selector">
+        <h3>Select Analysis Type:</h3>
+        <form>
+            <input type="radio" name="analysis-type" value="sector"> Sector</input>
+            <input type="radio" name="analysis-type" value="issuer"> Issuer</input>
+        </form>
+    </div>
+    
+    <br>
+
     <div id="app"></div>
+
+    <form autocomplete="off">
+        <div class="autocomplete">
+            <input type="text" name="myCompany" id="myCompanyInput" placeholder="Company Name">
+            <input type="submit" >
+        </div>
+    </form>
+
+    <form autocomplete="off">
+        <div class="autocomplete">
+            <input type="text" name="mySector" id="mySectorInput" placeholder="Sector Name">
+            <input type="submit">
+        </div>
+    </form>
+
     <section class="ipo-fees-by-year-section">
+        <div ></div>
         <h2>U.S. IPO Fees to Underwriters by Year</h2>
         <svg class="bar-chart"></svg>
     </section>

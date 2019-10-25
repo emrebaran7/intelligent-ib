@@ -1,13 +1,23 @@
-import { getIpoFeesByYear} from "./scripts/issuance"
+import { getIpoFeesByYear} from "./scripts/issuance";
+import { getCompanies } from "./scripts/companies";
+import { autocomplete } from "./scripts/autocomplete";
 import './styles/index.scss';
 
+//data
 const data = require('../assets/data/processed/new_data.json')
-
 const dataset = Object.values((getIpoFeesByYear(data)));
 
+//Search Bar for Companies
+const companies = [...new Set(getCompanies(data))];
+autocomplete(document.getElementById("myCompanyInput"), companies);
+
+//Search Bar for Companies
+const sectors = [...new Set(getCompanies(data))];
+autocomplete(document.getElementById("mySectorInput"), sectors);
+
+// initial bar chart
 const svgWidth = 500, svgHeight = 300, barPadding = 5;
 const barWidth = (svgWidth / dataset.length);
-
 
 const svg = d3.select('svg')
     .attr("width", svgWidth)
