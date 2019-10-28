@@ -6,7 +6,7 @@ export const getIpoFeesByYear = (data) => {
         let year = data[i].date_filed.slice(0,4);
         let commission;
 
-        if (data[i].underwriting_discount_and_commissions === undefined) {
+        if (data[i].underwriting_discount_and_commissions === null) {
             commission = 0;
         } else {
             commission = data[i].underwriting_discount_and_commissions.total;
@@ -31,8 +31,9 @@ export const getIpoFeesByYear = (data) => {
     }
 
     for (let y = 0; y < ipoFeesPerDeal.length ; y++) {
+        
         let key = Object.keys(ipoFeesPerDeal[y])
-        let value = parseInt(Object.values(ipoFeesPerDeal[y]))
+        let value = parseInt(Object.values(ipoFeesPerDeal[y]));
         ipoFeesByYear[key] += value;
     };
     

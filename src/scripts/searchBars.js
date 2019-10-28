@@ -2,8 +2,6 @@
 const data = require('../assets/data/processed/new_data.json')
 const dataset = Object.values((getIpoFeesByYear(data)));
 
-
-
 //Search Bar for Companies
 const companies = [...new Set(getCompanies(data))];
 autocomplete(document.getElementById("myCompanyInput"), companies);

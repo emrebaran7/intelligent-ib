@@ -12,30 +12,50 @@
 
 <body>
     <h1>Intelligent IB</h1>
-    <div class="analysis-selector">
-        <h3>Select Analysis Type:</h3>
-        <form id="analysis-type-selector"> 
-            <input type="radio" name="analysis-type" value="sector"> Sector</input>
-            <input type="radio" name="analysis-type" value="issuer"> Issuer</input>
-        </form>
-    </div>
+    <nav class="top-nav-bar">
+        <div class="year-selector">
+            <h3>Select Year:</h3>
+            <select name="year-options" >
+                <option value="2013">2013</option>
+                <option value="2014">2014</option>
+                <option value="2015">2015</option>
+                <option value="2016">2016</option>
+                <option value="2017">2017</option>
+                <option value="2018">2018</option>
+                <option value="2019">2019</option>
+            </select>
+        </div>
+
+        <br>
     
-    <br>
-    <div class="search-bar"> 
-        <form autocomplete="off" id="company-search-form" style="visibility:hidden">
-            <div class="autocomplete">
-                <input type="text" name="myCompany" id="myCompanyInput" placeholder="Company Name">
-                <input type="submit" >
-            </div>
-        </form>
+        <div class="analysis-selector">
+            <h3>Select Analysis Type:</h3>
+            <form id="analysis-type-selector">
+                <input type="radio" name="analysis-type" value="sector"> Sector</input>
+                <input type="radio" name="analysis-type" value="issuer"> Issuer</input>
+                <input type="radio" name="analysis-type" value="bank"> Bank</input>
+
+            </form>
+        </div>
+        
+        <br>
     
-        <form autocomplete="off" id="sector-search-form" style="visibility:hidden">
-            <div class="autocomplete">
-                <input type="text" name="mySector" id="mySectorInput" placeholder="Sector Name" >
-                <input type="submit">
-            </div>
-        </form>
-    </div>
+        <div class="search-bar"> 
+            <form autocomplete="off" id="company-search-form" style="visibility:hidden">
+                <div class="autocomplete">
+                    <input type="text" name="myCompany" id="myCompanyInput" placeholder="Company Name">
+                    <input type="submit" >
+                </div>
+            </form>
+        
+            <form autocomplete="off" id="sector-search-form" style="visibility:hidden">
+                <div class="autocomplete">
+                    <input type="text" name="mySector" id="mySectorInput" placeholder="Sector Name" >
+                    <input type="submit">
+                </div>
+            </form>
+        </div>
+    </nav>
 
     <section class="ipo-fees-by-year-section">
         <div ></div>
