@@ -1,21 +1,20 @@
-import {stylizeString} from './stylizeBankNames'
-let consolidatedBanksNames = new Object
+import {stylizeString} from './stylizeBankNames';
+require("babel-polyfill");
 
-d3.csv("/assets/data/raw/bank-name-consol.csv").then(function (data) {
-
-    for (let i = 0; i < data.length; i++){
-        let row = data[i];
-        let key = row["input_name"];
-        let value = stylizeString(row["output_name"]);   
-        consolidatedBanksNames[key] = value;   
+async function fetchData() {
+    const consolidatedBanksNames = {}
+    const data = await d3.csv("/assets/data/raw/bank-name-consol.csv")
+    for (const datum of data) {
+        const row = datum;
+        const key = row["input_name"];
+        const value = stylizeString(row["output_name"]);
+        consolidatedBanksNames[key] = value;
     }
-});
-
-console.log(consolidatedBanksNames)
-debugger
+    return consolidatedBanksNames
+}
 
 export const getUniqueBanksInput = (data) => {
-    const bankSet = new Set;
+    const bankSet = new Set();
     for (let i = 0; i < data.length; i++) {
         if (data[i].underwriters === null) {
             let bank = null
@@ -23,7 +22,7 @@ export const getUniqueBanksInput = (data) => {
         } else {
             let bankItems = (Object.keys(data[i].underwriters));
             for (let i = 1; i < bankItems.length; i++) {
-                bankSet.add(bankItems[i]);
+                bankSet.add((bankItems[i]));
             }
         }
     }
@@ -31,16 +30,19 @@ export const getUniqueBanksInput = (data) => {
     return bankSet;
 }
 
-
-export const getBanks = (bankInputSet) => {
+export const getBanks = async (bankInputSet) => {
+    
+    const consolidatedBanksNames = await fetchData()
+    
     const banksArray = Array.from(bankInputSet)
+    
     const banksOutput = []
-
     for (let i = 0; i < banksArray.length; i++) {
-        let bankInput = banksArray[i]; 
-
-        banksOutput.push(consolidatedBanksNames[bankInput]);
+        let bankInput = stylizeString(banksArray[i]);
+        let pushable = consolidatedBanksNames[bankInput];
+        if (!banksOutput.includes(pushable) && pushable !== undefined) {
+            banksOutput.push(pushable);
+        }
     }
-
     return banksOutput;
 }
