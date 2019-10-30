@@ -24,19 +24,3 @@ const leagueTable = (dataset, sector, issuer) => {
     }
 }
 
-export const getBanks = (data) => {
-    const bankSet = new Set;
-    for (let i = 0; i < data.length; i++ ) {
-        if (data[i].underwriters === null) {
-            let bank = null
-            bankSet.add(bank);
-        } else {
-            let bankItems = (Object.keys(data[i].underwriters));
-            for (let i = 1; i < bankItems.length; i++ ){
-                bankSet.add(bankItems[i]);
-            }   
-        }
-    }
-    
-    return bankSet;
-}
