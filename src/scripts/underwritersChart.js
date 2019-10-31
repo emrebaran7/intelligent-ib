@@ -1,4 +1,3 @@
-// const bankRevenueAggragator()
 const leagueTable = (dataset, sector, issuer) => {
     if (sector === "undefined" && issuer === "undefined") {
         for (let i = 0; i < dataset.legth; i++) {
