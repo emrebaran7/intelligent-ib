@@ -7,6 +7,8 @@ import { initialBarChart } from "./scripts/initialBarChart";
 import * as styles from './styles/index.scss';
 import { getUniqueBanksInput } from "./scripts/banks";
 import { getBanks } from "./scripts/banks";
+import { leagueTable } from "./scripts/underwritersChart"
+
 require("babel-polyfill");
 
 //data
@@ -29,4 +31,20 @@ getBanks(uniqueBanksInput).then(banks => {
     autocomplete(document.getElementById("myBankInput"), banks);
 })
 
+//process Company form data
+document.getElementById("company-search-form").submit.addEventListener("click", function () {
+    let company = document.getElementById("myCompanyInput").value
+    leagueTable(dataset, undefined, company);
+});
 
+//process Sector form data
+document.getElementById("company-search-form").submit.addEventListener("click", function () {
+    let sector = document.getElementById("mySectorInput").value
+    leagueTable(dataset, sector, undefined);
+});
+
+//process Bank form data
+document.getElementById("company-search-form").submit.addEventListener("click", function () {
+    let bank = document.getElementById("myBankInput").value
+
+});

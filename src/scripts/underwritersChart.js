@@ -1,4 +1,6 @@
-const leagueTable = (dataset, sector, issuer) => {
+import { majorSectorGroups } from '../scripts/sectors'
+
+export const leagueTable = (dataset, sector, issuer) => {
     if (sector === "undefined" && issuer === "undefined") {
         for (let i = 0; i < dataset.legth; i++) {
             let underwriters = dataset[i].underwriters;
@@ -12,14 +14,16 @@ const leagueTable = (dataset, sector, issuer) => {
                 //underwriting comissions per bank 
                 for (let i = 0; i < underwriters.length; i++) {
                     let allotment = underwriters[i].allotment;
-                    let underwriterName = Object.keys(underwriters[i])[0];3
+                    let underwriterName = Object.keys(underwriters[i])[0];
                     let bankCommission = allotment * totalCommission;
                     comissionPerBank[underwriterName] += bankCommission;
                 }
             }
         }
-
         return comissionPerBank;
+    // for issuers
+    } else if (sector === "undefined") {
+        
     }
 }
 

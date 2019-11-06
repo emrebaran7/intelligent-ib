@@ -44,31 +44,36 @@
             <form autocomplete="off" id="company-search-form" style="visibility:hidden">
                 <div class="autocomplete">
                     <input type="text" name="myCompany" id="myCompanyInput" placeholder="Company Name">
-                    <input type="submit" >
+                    <input type="submit" name="submit" value="Submit">
                 </div>
             </form>
         
             <form autocomplete="off" id="sector-search-form" style="visibility:hidden">
                 <div class="autocomplete">
                     <input type="text" name="mySector" id="mySectorInput" placeholder="Sector Name" >
-                    <input type="submit">
+                    <input type="submit" name="submit" value="Submit">
                 </div>
             </form>
 
             <form autocomplete="off" id="bank-search-form" style="visibility:hidden">
                 <div class="autocomplete">
                     <input type="text" name="myBank" id="myBankInput" placeholder="Bank Name">
-                    <input type="submit">
+                    <input type="submit" name="submit" value="Submit">
                 </div>
             </form>
         </div>
     </nav>
-
     <section class="ipo-fees-by-year-section">
         <div ></div>
         <h2>U.S. IPO Fees to Underwriters by Year</h2>
         <svg class="bar-chart"></svg>
     </section>
+    <!-- <script>
+        function processCompanyFormData(){
+            let company = document.getElementById("myCompanyInput").value;
+            alert(company)
+        }    
+    </script> -->
     <script src="./dist/main.js"></script>
 </body>
 

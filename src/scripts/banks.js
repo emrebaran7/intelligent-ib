@@ -3,7 +3,7 @@ require("babel-polyfill");
 
 async function fetchData() {
     const consolidatedBanksNames = {}
-    const data = await d3.csv("/assets/data/raw/bank-name-consol.csv")
+    const data = await d3.csv("assets/data/raw/bank-name-consol.csv")
     for (const datum of data) {
         const row = datum;
         const key = row["input_name"];
