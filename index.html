@@ -13,9 +13,18 @@
 <body>
     <h1>Intelligent IB</h1>
     <nav class="top-nav-bar">
-        <div class="year-selector">
-            <h3>Select Year:</h3>
-            <select name="year-options" >
+        <div class="analysis-selector">
+            <h3>Select Analysis Type:</h3>
+            <form id="analysis-type-selector">
+                <input type="radio" name="analysis-type" value="sector"> Sector</input>
+                <input type="radio" name="analysis-type" value="issuer"> Issuer</input>
+                <input type="radio" name="analysis-type" value="bank"> Bank</input>
+            </form>
+        </div>
+
+        <div id="year-selector" style="visibility:hidden"> 
+            <p>Select Year:</p>
+            <select id="year-selection" name="year-options" >
                 <option value="2013">2013</option>
                 <option value="2014">2014</option>
                 <option value="2015">2015</option>
@@ -24,18 +33,6 @@
                 <option value="2018">2018</option>
                 <option value="2019">2019</option>
             </select>
-        </div>
-
-        <br>
-    
-        <div class="analysis-selector">
-            <h3>Select Analysis Type:</h3>
-            <form id="analysis-type-selector">
-                <input type="radio" name="analysis-type" value="sector"> Sector</input>
-                <input type="radio" name="analysis-type" value="issuer"> Issuer</input>
-                <input type="radio" name="analysis-type" value="bank"> Bank</input>
-
-            </form>
         </div>
         
         <br>

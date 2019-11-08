@@ -31,7 +31,7 @@ export const stylizeString = (string) => {
 }
 
 //alphanumerize string
-const alphaNumerizer = (string) => {
+export const alphaNumerizer = (string) => {
     const alphanumeric = ('0123456789ABCDEFGHIJKLMOPQRSTUVWXYZ').split('');
     let result = '';
 
@@ -41,5 +41,5 @@ const alphaNumerizer = (string) => {
         }
     }
 
-    return result
+    return result;
 }
