@@ -12,3 +12,4 @@ export const capitalize = (string) => {
 
     return result.join(" ");
 }
+

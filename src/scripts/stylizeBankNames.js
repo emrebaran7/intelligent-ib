@@ -1,7 +1,7 @@
 // remove unicode and convert to ASCII
 const removeUnicode = (string) => {
     if (string !== undefined) {
-        let result = string.replace(/[^\x00-\x7F]/g, "").replace("\n"," ").replace(".",''); 
+        let result = string.replace(/[^\x00-\x7F]/g, "").replace(/[\u{0080}-\u{FFFF}]/gu, "").replace("\n"," ").replace(".",''); 
         return result;
     }
 }
