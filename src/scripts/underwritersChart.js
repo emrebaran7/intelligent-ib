@@ -3,10 +3,10 @@ import { capitalize } from './_helperFunctions';
 import { fetchData } from './banks';
 import { stylizeString, alphaNumerizer } from "./stylizeBankNames";
 
-export const leagueTable = async (data, lookupCode, company, yearInput) => {
+export const leagueTable = async (data, lookupCodes, company, yearInput) => {
     const consolidatedBanksNames = await fetchData();
 
-    if (lookupCode === "undefined") {
+    if (lookupCodes === "undefined") {
         let commissionPerBank = [];
         for (let y = 0; y < data.length; y++) {
             let issuer = data[y].company_name;
@@ -27,13 +27,13 @@ export const leagueTable = async (data, lookupCode, company, yearInput) => {
     } else if (company === "undefined"){
         let commissionPerBank = {};
         for (let z = 0; z < data.length; z++) {
-            let industryCode = data[z].SIC.slice(0,2); 
+            let sicCode = data[z].SIC; 
             let commission = data[z].underwriting_discount_and_commissions;
             let year = data[z].date_filed.slice(0, 4)
             let underwriters = data[z].underwriters;
-            if (industryCode === lookupCode && commission !== null && yearInput === year && underwriters !== null ) {
+            if (lookupCodes.includes(sicCode) && commission !== null && yearInput === year && underwriters !== null ) {
                 let totalCommission = commission.total;
-                for (let underwriter in underwriters) {
+                for (let underwriter in underwriters) { 
                     let stylizedUnderwriter = consolidatedBanksNames[underwriter];
                     if (commissionPerBank[underwriter] === undefined){
                         commissionPerBank[stylizedUnderwriter] = (totalCommission * underwriters[underwriter].allotment / 1000000);
@@ -43,21 +43,22 @@ export const leagueTable = async (data, lookupCode, company, yearInput) => {
                 }
             }
         }
-        debugger
-        const commissionPerBankArray = [];
-        for (let [key, value] of Object.entries(commissionPerBank)){
-            let pushable = {}
-            pushable[key] = value
-            commissionPerBankArray.push(pushable)
-        }
-        
-        commissionPerBankArray.sort((a,b) => {
-            if (Object.values(a)[0] > Object.values(b)[0]){
-                return -1;
-            } else {
-                return 1;
+        if (commissionPerBank !== {}){
+            const commissionPerBankArray = [];
+            for (let [key, value] of Object.entries(commissionPerBank)){
+                let pushable = {}
+                pushable[key] = value
+                commissionPerBankArray.push(pushable)
             }
-        })
-        return commissionPerBankArray
+            
+            commissionPerBankArray.sort((a,b) => {
+                if (Object.values(a)[0] > Object.values(b)[0]){
+                    return -1;
+                } else {
+                    return 1;
+                }
+            })
+            return commissionPerBankArray
+        }
     }
 }

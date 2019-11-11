@@ -1,32 +1,26 @@
 require("babel-polyfill");
-export const majorSectorGroups = new Array
 
-d3.csv("assets/data/raw/SIC/major-groups.csv").then(function (data) {
+export const majorSectorGroups = new Array;
+
+d3.csv("assets/data/raw/SIC/SIC to NAICS.csv").then(function (data) {
     for (let i = 0; i < data.length; i++){
-        majorSectorGroups.push(data[i].Description);
+        if (!(majorSectorGroups.includes(data[i].Industry))){
+            majorSectorGroups.push(data[i].Industry);
+        }
     }
 });
 
-// export const sectorDescriptionToCode = new Array;
-
-// d3.csv("assets/data/raw/SIC/major-groups.csv").then(function (data) {
-//     for (let i = 0; i < data.length; i++){
-//         let pushable = {};
-//         let description =  data[i]['Description']
-//         pushable[description] = [data[i]['Major Group']][0]
-//         sectorDescriptionToCode.push(pushable);
-//     }
-// });
-
 export async function fetchSectorData() {
-    const sectorDescriptionToCode = {}
-    const data = await d3.csv("assets/data/raw/SIC/major-groups.csv")
+    const sicCodesToIndustry = []
+    const data = await d3.csv("assets/data/raw/SIC/SIC to NAICS.csv")
     for (const datum of data) {
         const row = datum;
-        const key = row["Description"];
-        const value = row["Major Group"];
-        sectorDescriptionToCode[key] = value;
+        const key = row["SIC Code"];
+        const value = row["Industry"];
+        let pushable = {};
+        pushable[key] = value;
+        sicCodesToIndustry.push(pushable)
     }
-    return sectorDescriptionToCode
+    return sicCodesToIndustry
 }
 

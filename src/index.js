@@ -13,7 +13,6 @@ require("babel-polyfill");
 
 //data
 const data = require('../assets/data/processed/new_data.json')
-// const dataset = Object.values((getIpoFeesByYear(data)));
 
 
 //Search Bar for Companies
@@ -26,13 +25,19 @@ autocomplete(document.getElementById("mySectorInput"), majorSectorGroups);
 //Search Bar for Banks
 const uniqueBanksInput = getUniqueBanksInput(data); 
 getBanks(uniqueBanksInput).then(banks => {
-    debugger
     autocomplete(document.getElementById("myBankInput"), banks);
 })
 
-//barchart
-// initialBarChart(dataset);
+// barchart
+document.getElementById("sector-search-form").submit.addEventListener("click", function (event) {
+    event.preventDefault();
 
+    let year = document.getElementById("year-selection").value;
+    let sector = document.getElementById("mySectorInput").value;
+    debugger
+    let ipoFeesByYear = getIpoFeesByYear(data, year, undefined, sector);
+    initialBarChart(ipoFeesByYear);
+});
 
 // process company based league table
 document.getElementById("company-search-form").submit.addEventListener("click", async function (event) {
@@ -63,13 +68,18 @@ document.getElementById("sector-search-form").submit.addEventListener("click", f
     fetchSectorData().then(async sectorData => {
         let year = document.getElementById("year-selection").value
         const data = require('../assets/data/processed/new_data.json');
-        let sector = document.getElementById("mySectorInput").value
-        let lookupCode = sectorData[sector];
+        let sector = document.getElementById("mySectorInput").value;
         
-        let lt = await leagueTable(data, lookupCode, "undefined", year);
+        const lookupCodes = [];
+        for (let i = 0; i < sectorData.length; i++){
+            if (Object.values(sectorData[i])[0] == sector){
+                lookupCodes.push(Object.keys(sectorData[i])[0])
+            }
+        }
 
+        let lt = await leagueTable(data, lookupCodes, "undefined", year);
         let perrow = 3,
-            html = `<h2>Fees to Underwriters in ${sector}</h2><table><tr>`;
+            html = `<h2>${year} Fees to Underwriters in ${sector}</h2><table><tr>`;
         for (let i = 0; i < 20; i++) {
             html += "<td>" + (i + 1) + "." + "</td>"
             html += "<td>" + Object.keys(lt[i]) + "</td>";
@@ -96,7 +106,7 @@ document.getElementById("bank-search-form").submit.addEventListener("click", asy
     let tableLength = topIssuers.length ;
     if (topIssuers.length > 20) { tableLength = 20 }
     let perrow = 3,
-        html = `<h2>${bankInput}'s Top Fee-Payers in ${yearInput}</h2><table><tr>`;
+        html = `<h2>${bankInput}'s Top 20 Fee-Payers in ${yearInput}</h2><table><tr>`;
 
     for (let i = 0; i < tableLength; i++) {
         html += "<td>" + (i + 1) + "." + "</td>"
@@ -110,4 +120,3 @@ document.getElementById("bank-search-form").submit.addEventListener("click", asy
     html += "</tr></table>";
     document.getElementById("table-container").innerHTML = html;
 });
-3

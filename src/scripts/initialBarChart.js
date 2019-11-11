@@ -1,4 +1,5 @@
 export const initialBarChart = (dataset) => {
+    debugger
     const svgWidth = 500, svgHeight = 300, barPadding = 5;
     const barWidth = (svgWidth / dataset.length);
 
