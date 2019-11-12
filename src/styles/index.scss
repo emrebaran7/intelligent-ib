@@ -44,7 +44,6 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
 // end of reset
 
 body{
@@ -53,18 +52,36 @@ body{
     margin: 5%;
 }
 
-
 h1 {
     font-size: 32px;
     line-height: 150%;
     font-weight: bolder;
     text-align: center;
-    color: #2FCED6;
 }
 
 h2 {
-    font-size: 26px
+    font-size: 20px;
+    text-align: center;
+    line-height: 2;
 }
+
+a{
+    color: #66bfc4;
+}
+
+.description{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;    
+    box-sizing: border-box;
+    width: 100%;
+    border: solid #66bfc4 2px;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+
 
 nav{
     margin-top: 20px;
@@ -73,7 +90,7 @@ nav{
     justify-content: space-between;    
     box-sizing: border-box;
     width: 100%;
-    border: solid #2FCED6 2px;
+    border: solid #66bfc4 2px;
     padding: 15px;
     border-radius: 10px;
 }
@@ -81,7 +98,7 @@ nav{
 #analytics-container{
     box-sizing: border-box;
     width: 100%;
-    border: solid #2FCED6 2px;
+    border: solid #66bfc4 2px;
     padding: 15px;
     border-radius: 10px;
 }
@@ -94,10 +111,28 @@ nav{
 
 #analysis-type-selector label{
     display: inline-block;
+    color:  #66bfc4;
     background-color: #ddd;
-    padding: 10px 20px;
-    font-family: sans-serif, Arial;
+    padding: 5px 20px;
     font-size: 16px;
-    border: 2px solid #444;
+    border: 2px solid #66bfc4;
+    color: #25a4ab;
     border-radius: 4px;
 }
+
+
+#analysis-type-selector input[type="radio"]:checked + label {
+    background-color:#66bfc4;
+    border-color:#25a4ab;
+    color: white;
+}
+
+.radio-toolbar input[type="radio"]:focus + label {
+    border: 2px dashed #444;
+}
+
+#analysis-type-selector label:hover{
+    background-color: #66bfc4;
+    color: white;
+}
+
