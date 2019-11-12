@@ -2,18 +2,18 @@ import { getCompanies } from "./scripts/companies";
 import { autocomplete } from "./scripts/autocomplete";
 import { majorSectorGroups, fetchSectorData } from './scripts/sectors';
 import { displayForm } from "./scripts/displayForm";
-import { getIpoFeesByYear } from "./scripts/issuance";
+import { getIpoFeesByYear } from "./scripts/ipoFeesByYear";
 import { initialBarChart } from "./scripts/initialBarChart";
 import * as styles from './styles/index.scss';
 import { getUniqueBanksInput } from "./scripts/banks";
 import { getBanks } from "./scripts/banks";
 import { leagueTable } from "./scripts/underwritersChart";
 import { topIssuersTable } from "./scripts/issuersChart"
+import { yearlyGrowthChart } from "./scripts/yearlyGrowthChart"
 require("babel-polyfill");
 
 //data
 const data = require('../assets/data/processed/new_data.json')
-
 
 //Search Bar for Companies
 const companies = [...new Set(getCompanies(data))];
@@ -28,16 +28,44 @@ getBanks(uniqueBanksInput).then(banks => {
     autocomplete(document.getElementById("myBankInput"), banks);
 })
 
-// barchart
+// barchart for sectors
 document.getElementById("sector-search-form").submit.addEventListener("click", function (event) {
     event.preventDefault();
-
-    let year = document.getElementById("year-selection").value;
-    let sector = document.getElementById("mySectorInput").value;
-    debugger
-    let ipoFeesByYear = getIpoFeesByYear(data, year, undefined, sector);
-    initialBarChart(ipoFeesByYear);
+    fetchSectorData().then(async sectorData => {
+        let year = document.getElementById("year-selection").value;
+        let sector = document.getElementById("mySectorInput").value;
+        const data = require('../assets/data/processed/new_data.json');
+    
+        const lookupCodes = [];
+        for (let i = 0; i < sectorData.length; i++) {
+            if (Object.values(sectorData[i])[0] === sector) {
+                lookupCodes.push(Object.keys(sectorData[i])[0])
+            }
+        }
+        
+        let ipoFeesByYear = await getIpoFeesByYear(data, year, undefined, lookupCodes);
+        
+        yearlyGrowthChart(ipoFeesByYear);
+    });
 });
+
+// barchart for banks
+// document.getElementById("bank-search-form").submit.addEventListener("click", function (event) {
+//     event.preventDefault();
+//     let year = document.getElementById("year-selection").value;
+//     let sector = document.getElementById("mySectorInput").value;
+//     const data = require('../assets/data/processed/new_data.json');
+
+//     const lookupCodes = [];
+//     for (let i = 0; i < sectorData.length; i++) {
+//         if (Object.values(sectorData[i])[0] === sector) {
+//             lookupCodes.push(Object.keys(sectorData[i])[0])
+//         }
+//     }
+//     let ipoFeesByYear = Object.values(await getIpoFeesByYear(data, year, undefined, lookupCodes));
+//     initialBarChart(ipoFeesByYear);
+// });
+
 
 // process company based league table
 document.getElementById("company-search-form").submit.addEventListener("click", async function (event) {
@@ -67,12 +95,12 @@ document.getElementById("sector-search-form").submit.addEventListener("click", f
     event.preventDefault();
     fetchSectorData().then(async sectorData => {
         let year = document.getElementById("year-selection").value
-        const data = require('../assets/data/processed/new_data.json');
         let sector = document.getElementById("mySectorInput").value;
+        const data = require('../assets/data/processed/new_data.json');
         
         const lookupCodes = [];
         for (let i = 0; i < sectorData.length; i++){
-            if (Object.values(sectorData[i])[0] == sector){
+            if (Object.values(sectorData[i])[0] === sector){
                 lookupCodes.push(Object.keys(sectorData[i])[0])
             }
         }

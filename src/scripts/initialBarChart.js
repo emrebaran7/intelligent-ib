@@ -1,18 +1,15 @@
 export const initialBarChart = (dataset) => {
-    debugger
     const svgWidth = 500, svgHeight = 300, barPadding = 5;
     const barWidth = (svgWidth / dataset.length);
-
     const svg = d3.select('svg')
         .attr("width", svgWidth)
         .attr("height", svgHeight);
-
     const barChart = svg.selectAll("rect")
         .data(dataset)
         .enter()
         .append("rect")
         .attr("y", function (d) {
-            return svgHeight - d / 20
+            return svgHeight - d / 5
         })
         .attr("height", function (d) {
             return d;
