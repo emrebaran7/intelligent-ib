@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./dist/main.css">
     <script src="https://d3js.org/d3.v5.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">  
     <title>Intelligent IB</title>
 </head>
 
@@ -14,16 +15,21 @@
     <h1>Intelligent IB</h1>
     <nav class="top-nav-bar">
         <div class="analysis-selector">
-            <h3>Select Analysis Type:</h3>
+            <h2>Select Analysis Type:</h2>
             <form id="analysis-type-selector">
-                <input type="radio" name="analysis-type" value="sector"> Sector</input>
-                <input type="radio" name="analysis-type" value="issuer"> Issuer</input>
-                <input type="radio" name="analysis-type" value="bank"> Bank</input>
+                <input type="radio" id="radio1" name="analysis-type" value="sector"></input>
+                <label for="radio1">Sector</label>
+
+                <input type="radio" id="radio2" name="analysis-type" value="issuer"></input>
+                <label for="radio2">Issuer</label>
+
+                <input type="radio" id="radio3" name="analysis-type" value="bank"></input>
+                <label for="radio3">Bank</label>
             </form>
         </div>
 
-        <div id="year-selector" style="visibility:hidden"> 
-            <p>Select Year:</p>
+        <div id="year-selector" class="radio-toolbar" style="visibility:hidden"> 
+            <h2>Select Year:</h2>
             <select id="year-selection" name="year-options" >
                 <option value="2015">2015</option>
                 <option value="2016">2016</option>
@@ -32,9 +38,7 @@
                 <option value="2019">2019</option>
             </select>
         </div>
-        
-        <br>
-    
+
         <div class="search-bar"> 
             <form autocomplete="off" id="company-search-form" style="visibility:hidden">
                 <div class="autocomplete">
@@ -58,12 +62,22 @@
             </form>
         </div>
     </nav>
-    <section class="ipo-fees-by-year-section">
-        <div ></div>
-        <h2>U.S. IPO Fees to Underwriters by Year</h2>
-        <svg class="bar-chart"></svg>
-    </section>
-    <section id="table-container"></section>
+    
+    <div id="analytics-container">
+        <section class="ipo-fees-by-year-section">
+            <div ></div>
+            <h2>U.S. IPO Fees to Underwriters by Year</h2>
+            <svg class="bar-chart">
+                
+            </svg>
+        </section>
+
+        <section id="table-container"></section>
+
+    </div>
+
+
+
     <script src="./dist/main.js"></script>
 </body>
 

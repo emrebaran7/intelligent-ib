@@ -38,9 +38,51 @@ export const yearlyGrowthChart = (dataset) => {
         .data(dataset)
         .enter()
         .append('rect')
+        .attr('class', 'bar')
         .attr('x', (d) => xScale(d.year))
         .attr('y', (d) => yScale(d.fees))
         .attr('height', (d) => height - yScale(d.fees))
         .attr('width', xScale.bandwidth())
+
+    //vertical grid lines
+    // chart.append('g')
+    //     .attr('class', 'grid')
+    //     .attr('transform', `translate(0, ${height})`)
+    //     .call(d3.axisBottom()
+    //     .scale(xScale)
+    //     .tickSize(-height, 0, 0)
+    //     .tickFormat(''))
+
+    //horizontal grid lines
+    chart.append('g')
+        .attr('class','grid')
+        .call(d3.axisLeft()
+        .scale(yScale)
+        .tickSize(-width,0,0)
+        .tickFormat(''))
+
+    //verticle axis label
+    svg.append('text')
+        .attr('x', -(height / 2 - margin))
+        .attr('y', margin / 2.4)
+        .attr('transform', 'rotate(-90)')
+        .attr('text-anchor', 'middle')
+        .text('Underwriting Commissions ($m)')
+
+    //horizontal axis label
+    svg.append('text')
+        .attr('x', width / 2 + margin)
+        .attr('y', height - 10)
+        .attr('text-anchor', 'middle')
+        .text('Year')
+
+    //interactivity
+    svgElement
+        .on('mouseenter', function (actual, i) {
+            d3.select(this).attr('opacity', 0.5)
+        })
+        .on('mouseleave', function (actual, i) {
+            d3.select(this).attr('opacity', 1)
+        })
 }
 
