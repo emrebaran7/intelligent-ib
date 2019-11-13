@@ -81,8 +81,6 @@ a{
     border-radius: 10px;
 }
 
-
-
 nav{
     margin-top: 20px;
     margin-bottom: 20px;
@@ -120,19 +118,39 @@ nav{
     border-radius: 4px;
 }
 
-
 #analysis-type-selector input[type="radio"]:checked + label {
     background-color:#66bfc4;
     border-color:#25a4ab;
     color: white;
 }
 
-.radio-toolbar input[type="radio"]:focus + label {
-    border: 2px dashed #444;
-}
-
 #analysis-type-selector label:hover{
     background-color: #66bfc4;
     color: white;
+    cursor: pointer; 
+
 }
 
+#year-selector{
+    display: flex;
+    flex-direction: column;   
+}
+
+#year-selector select{
+    padding: 5px 20px;
+    appearance: none; 
+    outline: 0; 
+    background:#ddd; 
+    width: 100%; 
+    height: 100%; 
+    color: #25a4ab; 
+    cursor: pointer; 
+    border: 2px solid #66bfc4;
+    border-radius: 4px; 
+}
+
+#year-selector select option{
+    color: #25a4ab; 
+    font-size: 16px;
+    text-align: center;
+}

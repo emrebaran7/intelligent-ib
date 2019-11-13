@@ -24,13 +24,13 @@
         <div class="analysis-selector">
             <h2>Select Analysis Type:</h2>
             <form id="analysis-type-selector">
-                <input type="radio" id="radio1" name="analysis-type" value="sector"></input>
+                <input type="radio" id="radio1" name="analysis-type" value="Sector"></input>
                 <label for="radio1">Sector</label>
 
-                <input type="radio" id="radio2" name="analysis-type" value="issuer"></input>
+                <input type="radio" id="radio2" name="analysis-type" value="Issuer"></input>
                 <label for="radio2">Issuer</label>
 
-                <input type="radio" id="radio3" name="analysis-type" value="bank"></input>
+                <input type="radio" id="radio3" name="analysis-type" value="Bank"></input>
                 <label for="radio3">Bank</label>
             </form>
         </div>
@@ -46,25 +46,12 @@
             </select>
         </div>
 
-        <div class="search-bar"> 
-            <form autocomplete="off" id="company-search-form" style="visibility:hidden">
+        <div id="search-bar-container">
+            <h2 id="search-bar-header"></h2>
+            <form autocomplete="off" id="search-form">
                 <div class="autocomplete">
-                    <input type="text" name="myCompany" id="myCompanyInput" placeholder="Company Name">
-                    <input type="submit" name="submit" value="Submit">
-                </div>
-            </form>
-        
-            <form autocomplete="off" id="sector-search-form" style="visibility:hidden">
-                <div class="autocomplete">
-                    <input type="text" name="mySector" id="mySectorInput" placeholder="Sector Name" >
-                    <input type="submit" name="submit" value="Submit">
-                </div>
-            </form>
-
-            <form autocomplete="off" id="bank-search-form" style="visibility:hidden">
-                <div class="autocomplete">
-                    <input type="text" name="myBank" id="myBankInput" placeholder="Bank Name">
-                    <input type="submit" name="submit" value="Submit">
+                    <input type="text" name="my-search-input" id="my-search-input" placeholder="My Input">
+                    <input type="submit" id="search-form-submit" name="submit" value="Submit">
                 </div>
             </form>
         </div>
