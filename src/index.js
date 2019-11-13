@@ -8,8 +8,8 @@ import * as styles from './styles/index.scss';
 import { getUniqueBanksInput } from "./scripts/banks";
 import { getBanks } from "./scripts/banks";
 import { leagueTable } from "./scripts/underwritersChart";
-import { topIssuersTable } from "./scripts/issuersChart"
-import { yearlyGrowthChart } from "./scripts/yearlyGrowthChart"
+import { topIssuersTable } from "./scripts/issuersChart";
+import { yearlyGrowthChart } from "./scripts/yearlyGrowthChart";
 require("babel-polyfill");
 
 //data
@@ -23,7 +23,9 @@ for (let radio in radioForm) {
 
     currentRadio.onclick = function(event) {
         document.getElementById("search-bar-header").innerHTML = `Enter ${ this.value }:`
-
+        document.getElementById("year-selector").style.visibility = 'visible'
+        document.getElementById("search-bar-container").style.visibility = 'visible'
+        
         if (this.value === 'Sector') {
             document.getElementById("my-search-input").placeholder = `${this.value}`
             autocomplete(document.getElementById("my-search-input"), majorSectorGroups);
@@ -59,6 +61,7 @@ for (let radio in radioForm) {
                     document.getElementById("table-container").innerHTML = html;
 
                     //barchart
+                    document.getElementById("analytics-container").style.visibility = "visible"
                     let ipoFeesByYear = await getIpoFeesByYear(data, year, undefined, lookupCodes);
                     yearlyGrowthChart(ipoFeesByYear);
                 });
@@ -71,7 +74,7 @@ for (let radio in radioForm) {
             //process sector based league table
             document.getElementById("search-form").submit.addEventListener("click", async function (event) {
                 event.preventDefault();
-                debugger
+
                 const data = require('../assets/data/processed/new_data.json');
                 let company = document.getElementById("my-search-input").value;
                 let yearInput = document.getElementById("year-selection").value;

@@ -12,7 +12,7 @@ export const yearlyGrowthChart = (dataset) => {
     
     const svg = d3.select('svg')
         .attr("width", width)
-        .attr("height", height );
+        .attr("height", height);
     
     const chart = svg.append('g')
         .attr('transform', `translate(${margin}, -${margin})`) // move the start of the chart to the (60;60) position of the SVG
@@ -54,12 +54,12 @@ export const yearlyGrowthChart = (dataset) => {
     //     .tickFormat(''))
 
     //horizontal grid lines
-    chart.append('g')
-        .attr('class','grid')
-        .call(d3.axisLeft()
-        .scale(yScale)
-        .tickSize(-width,0,0)
-        .tickFormat(''))
+    // chart.append('g')
+    //     .attr('class','grid')
+    //     .call(d3.axisLeft()
+    //     .scale(yScale)
+    //     .tickSize(-width,0,0)
+    //     .tickFormat(''))
 
     //verticle axis label
     svg.append('text')
@@ -70,19 +70,19 @@ export const yearlyGrowthChart = (dataset) => {
         .text('Underwriting Commissions ($m)')
 
     //horizontal axis label
-    svg.append('text')
-        .attr('x', width / 2 + margin)
-        .attr('y', height - 10)
-        .attr('text-anchor', 'middle')
-        .text('Year')
+    // svg.append('text')
+    //     .attr('x', width / 2 + margin)
+    //     .attr('y', height - 10)
+    //     .attr('text-anchor', 'middle')
+    //     .text('Year')
 
     //interactivity
-    svgElement
-        .on('mouseenter', function (actual, i) {
-            d3.select(this).attr('opacity', 0.5)
-        })
-        .on('mouseleave', function (actual, i) {
-            d3.select(this).attr('opacity', 1)
-        })
+    // svgElement
+    //     .on('mouseenter', function (actual, i) {
+    //         d3.select(this).attr('opacity', 0.5)
+    //     })
+    //     .on('mouseleave', function (actual, i) {
+    //         d3.select(this).attr('opacity', 1)
+    //     })
 }
 

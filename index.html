@@ -46,7 +46,7 @@
             </select>
         </div>
 
-        <div id="search-bar-container">
+        <div id="search-bar-container" style="visibility: hidden">
             <h2 id="search-bar-header"></h2>
             <form autocomplete="off" id="search-form">
                 <div class="autocomplete">
@@ -57,17 +57,11 @@
         </div>
     </nav>
     
-    <div id="analytics-container">
-        <section class="ipo-fees-by-year-section">
-            <div ></div>
-            <h2>U.S. IPO Fees to Underwriters by Year</h2>
-            <svg class="bar-chart">
-                
-            </svg>
-        </section>
-
+    <div id="analytics-container" style="visibility: hidden;">
+        <div class="svg-container">
+            <svg class="bar-chart"></svg>  
+        </div>
         <section id="table-container"></section>
-
     </div>
 
 
