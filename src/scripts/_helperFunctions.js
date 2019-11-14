@@ -20,7 +20,6 @@ export const capitalize = (string) => {
 export function getNonConsolidatedBanks(bankName) {
     const data = require("../../assets/data/processed/bank-name-consol.json")
     const consolidatedBanksNames = [];
-    debugger
     for (const datum of data) {
         const row = datum;
         const key = row["input_name"];

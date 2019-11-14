@@ -130,7 +130,6 @@ for (let radio in radioForm) {
                 //barchart
                 document.getElementById("analytics-container").style.visibility = "visible"
                 let ipoFeesByYear = getIpoFeesByYear(data, year, bank, undefined);
-                debugger
                 yearlyGrowthChart(ipoFeesByYear);
             });
         } else if (this.value === 'Issuer') {
