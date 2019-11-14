@@ -62,12 +62,12 @@ export const yearlyGrowthChart = (dataset) => {
     //     .tickFormat(''))
 
     //verticle axis label
-    svg.append('text')
-        .attr('x', -(height / 2 - margin))
-        .attr('y', margin / 2.4)
-        .attr('transform', 'rotate(-90)')
-        .attr('text-anchor', 'middle')
-        .text('Underwriting Commissions ($m)')
+    // svg.append('text')
+    //     .attr('x', -(height / 2 - margin))
+    //     .attr('y', margin / 2.4)
+    //     .attr('transform', 'rotate(-90)')
+    //     .attr('text-anchor', 'middle')
+    //     .text('Underwriting Commissions ($m)')
 
     //horizontal axis label
     // svg.append('text')

@@ -1,3 +1,5 @@
+import {stylizeString} from "./stylizeBankNames";
+
 export const capitalize = (string) => {
     let arr = string.split(" ");
     let result = [];
@@ -13,3 +15,23 @@ export const capitalize = (string) => {
     return result.join(" ");
 }
 
+export async function getNonConsolidatedBanks(bankName) {
+    const consolidatedBanksNames = {}
+    const data = await d3.csv("assets/data/raw/bank-name-consol.csv")
+    for (const datum of data) {
+        const row = datum;
+        const key = row["input_name"];
+        const value = (row["output_name"]);
+        consolidatedBanksNames[key] = value;
+    }
+    const bankNamesArray = Object.entries(consolidatedBanksNames)
+    const outputArray = []
+
+    for (let i = 0; i < bankNamesArray.length; i++){
+        if (bankNamesArray[i][1] === bankName){
+            outputArray.push(bankNamesArray[i][0])
+        }
+    }
+
+    return outputArray;
+} 

@@ -25,6 +25,8 @@ for (let radio in radioForm) {
         document.getElementById("search-bar-header").innerHTML = `Enter ${ this.value }:`
         document.getElementById("year-selector").style.visibility = 'visible'
         document.getElementById("search-bar-container").style.visibility = 'visible'
+        const year = document.getElementById("year-selection").value
+        const data = require('../assets/data/processed/new_data.json');
         
         if (this.value === 'Sector') {
             document.getElementById("my-search-input").placeholder = `${this.value}`
@@ -34,9 +36,7 @@ for (let radio in radioForm) {
             document.getElementById("search-form").submit.addEventListener("click", function (event) {
                 event.preventDefault();
                 fetchSectorData().then(async sectorData => {
-                    let year = document.getElementById("year-selection").value
                     let sector = document.getElementById("my-search-input").value;
-                    const data = require('../assets/data/processed/new_data.json');
 
                     const lookupCodes = [];
                     for (let i = 0; i < sectorData.length; i++) {
@@ -74,12 +74,9 @@ for (let radio in radioForm) {
             //process sector based league table
             document.getElementById("search-form").submit.addEventListener("click", async function (event) {
                 event.preventDefault();
+                const company = document.getElementById("my-search-input").value;
 
-                const data = require('../assets/data/processed/new_data.json');
-                let company = document.getElementById("my-search-input").value;
-                let yearInput = document.getElementById("year-selection").value;
-
-                let lt = await leagueTable(data, "undefined", company, yearInput);
+                let lt = await leagueTable(data, "undefined", company, year);
                 let perrow = 3,
                     html = `<h2> ${company}'s Fees to Underwriters</h2><table><tr>`;
                 for (let i = 0; i < lt.length; i++) {
@@ -105,16 +102,13 @@ for (let radio in radioForm) {
             //process Bank form data
             document.getElementById("search-form").submit.addEventListener("click", async function (event) {
                 event.preventDefault();
+                const bank = document.getElementById("my-search-input").value;
 
-                const data = require('../assets/data/processed/new_data.json');
-                const bankInput = document.getElementById("my-search-input").value;
-                const yearInput = document.getElementById("year-selection").value;
-
-                const topIssuers = await topIssuersTable(data, bankInput, yearInput);
+                const topIssuers = await topIssuersTable(data, bank, year);
                 let tableLength = topIssuers.length;
                 if (topIssuers.length > 20) { tableLength = 20 }
                 let perrow = 3,
-                    html = `<h2>${bankInput}'s Top 20 Fee-Payers in ${yearInput}</h2><table><tr>`;
+                    html = `<h2>${bank}'s Top ${tableLength} Fee-Payers in ${year}</h2><table><tr>`;
 
                 for (let i = 0; i < tableLength; i++) {
                     html += "<td>" + (i + 1) + "." + "</td>"
@@ -127,26 +121,13 @@ for (let radio in radioForm) {
                 }
                 html += "</tr></table>";
                 document.getElementById("table-container").innerHTML = html;
+
+                //barchart
+                document.getElementById("analytics-container").style.visibility = "visible"
+                let ipoFeesByYear = await getIpoFeesByYear(data, year, bank, undefined);
+                yearlyGrowthChart(ipoFeesByYear);
             });
         }
     }
 }
-
-// barchart for banks
-// document.getElementById("bank-search-form").submit.addEventListener("click", function (event) {
-//     event.preventDefault();
-//     let year = document.getElementById("year-selection").value;
-//     let sector = document.getElementById("my-sector-input").value;
-//     const data = require('../assets/data/processed/new_data.json');
-
-//     const lookupCodes = [];
-//     for (let i = 0; i < sectorData.length; i++) {
-//         if (Object.values(sectorData[i])[0] === sector) {
-//             lookupCodes.push(Object.keys(sectorData[i])[0])
-//         }
-//     }
-//     let ipoFeesByYear = Object.values(await getIpoFeesByYear(data, year, undefined, lookupCodes));
-//     initialBarChart(ipoFeesByYear);
-// });
-
 

@@ -8,7 +8,7 @@ export async function fetchData() {
     for (const datum of data) {
         const row = datum;
         const key = row["input_name"];
-        const value = stylizeString(row["output_name"]);
+        const value = (row["output_name"]);
         consolidatedBanksNames[key] = value;
     }
     return consolidatedBanksNames
