@@ -1,8 +1,8 @@
 export const yearlyGrowthChart = (dataset) => {
     //determine chart size
     const margin = 60; // give a little extra padding to the chart
-    const width = 1000; 
-    const height = 800;
+    const width = 1100; 
+    const height = 500;
     
     let yMax = 0;
     for (let datum of dataset) {
@@ -11,18 +11,18 @@ export const yearlyGrowthChart = (dataset) => {
     yMax = Math.ceil(yMax * 1.1 / 100) * 100; // max value 
     
     const svg = d3.select('svg')
-        .attr("width", width)
-        .attr("height", height);
+        .attr("width", width + (margin * 2))
+        .attr("height", height + margin);
     
     const chart = svg.append('g')
-        .attr('transform', `translate(${margin}, -${margin})`) // move the start of the chart to the (60;60) position of the SVG
+        .attr('transform', `translate(${margin},0)`) // move the start of the chart to the (60;60) position of the SVG
 
     const yScale = d3.scaleLinear()
         .range([height, 0]) // svg coordinates go from top to bottom hence, height being first
         .domain([0, yMax])
 
-    chart.append('g')
-        .call(d3.axisLeft(yScale)); // add scale for the y axis
+    // chart.append('g')
+    //     .call(d3.axisLeft(yScale)); // add scale for the y axis
 
     // x axis
     const xScale = d3.scaleBand()
@@ -38,6 +38,7 @@ export const yearlyGrowthChart = (dataset) => {
         .data(dataset)
         .enter()
         .append('rect')
+        .style("fill", "rgb(7,104,110)")
         .attr('class', 'bar')
         .attr('x', (d) => xScale(d.year))
         .attr('y', (d) => yScale(d.fees))
@@ -84,5 +85,22 @@ export const yearlyGrowthChart = (dataset) => {
     //     .on('mouseleave', function (actual, i) {
     //         d3.select(this).attr('opacity', 1)
     //     })
+
+    svg.selectAll(".text")
+        .data(dataset)
+        .enter()
+        .append("text")
+        .attr('class', "label")
+        .attr("x", function(d, i) {
+            return (275/2 + 58/2 + 275 * i + 68.75 * (i + 1) ) 
+        })
+        .attr("y", function(d) {
+            console.log(yScale(d.fees))
+            return yScale(d.fees) - 5
+        })
+        .text(function(d) {
+            let labelized = `$ ${d.fees} m`
+            return labelized; 
+        });
 }
 

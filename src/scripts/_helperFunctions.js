@@ -1,5 +1,7 @@
 import {stylizeString} from "./stylizeBankNames";
 
+
+
 export const capitalize = (string) => {
     let arr = string.split(" ");
     let result = [];
@@ -15,9 +17,10 @@ export const capitalize = (string) => {
     return result.join(" ");
 }
 
-export async function getNonConsolidatedBanks(bankName) {
-    const consolidatedBanksNames = {}
-    const data = await d3.csv("assets/data/raw/bank-name-consol.csv")
+export function getNonConsolidatedBanks(bankName) {
+    const data = require("../../assets/data/processed/bank-name-consol.json")
+    const consolidatedBanksNames = [];
+    debugger
     for (const datum of data) {
         const row = datum;
         const key = row["input_name"];

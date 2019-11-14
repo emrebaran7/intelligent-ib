@@ -1,0 +1,2110 @@
+[
+    {
+        "input_name": "A.G.P./Alliance Global Partners",
+        "output_name": "A.G.P./Alliance Global Partners"
+    },
+    {
+        "input_name": "ABN AMRO Securities (USA) LLC",
+        "output_name": "ABN AMRO Securities (USA) LLC"
+    },
+    {
+        "input_name": "ABN AMRO Securities (USA)LLC",
+        "output_name": "ABN AMRO Securities (USA) LLC"
+    },
+    {
+        "input_name": "Academy Securities Inc.",
+        "output_name": "Academy Securities Inc."
+    },
+    {
+        "input_name": "Aegis Capital Corp.",
+        "output_name": "Aegis Capital Corp"
+    },
+    {
+        "input_name": "Aegis Capital Corp",
+        "output_name": "Aegis Capital Corp"
+    },
+    {
+        "input_name": "Aegis Capital Corp.",
+        "output_name": "Aegis Capital Corp"
+    },
+    {
+        "input_name": "Aegis Capital Corporation",
+        "output_name": "Aegis Capital Corp"
+    },
+    {
+        "input_name": "Aegis CapitalCorp",
+        "output_name": "Aegis Capital Corp"
+    },
+    {
+        "input_name": "Aegis CapitalCorp.",
+        "output_name": "Aegis Capital Corp"
+    },
+    {
+        "input_name": "Allen & Company LLC",
+        "output_name": "Allen & Company LLC"
+    },
+    {
+        "input_name": "Allen & Company LLC.",
+        "output_name": "Allen & Company LLC"
+    },
+    {
+        "input_name": "Allen & CompanyLLC",
+        "output_name": "Allen & Company LLC"
+    },
+    {
+        "input_name": "Apollo Global Securities LLC",
+        "output_name": "Apollo Global Securities LLC"
+    },
+    {
+        "input_name": "Apollo Global SecuritiesLLC",
+        "output_name": "Apollo Global Securities LLC"
+    },
+    {
+        "input_name": "ApolloGlobalSecurities LLC",
+        "output_name": "Apollo Global Securities LLC"
+    },
+    {
+        "input_name": "Arcadia Securities LLC",
+        "output_name": "Arcadia Securities LLC"
+    },
+    {
+        "input_name": "Atonline Limited",
+        "output_name": "Atonline Limited"
+    },
+    {
+        "input_name": "Avondale Partners LLC",
+        "output_name": "Avondale Partners LLC"
+    },
+    {
+        "input_name": "Avondale PartnersLLC",
+        "output_name": "Avondale Partners LLC"
+    },
+    {
+        "input_name": "Axia Capital Markets LLC",
+        "output_name": "Axia Capital Markets LLC"
+    },
+    {
+        "input_name": "Axiom Capital Management Inc.",
+        "output_name": "Axiom Capital Management Inc."
+    },
+    {
+        "input_name": "B. Riley FBR Inc.",
+        "output_name": "B. Riley FBR Inc."
+    },
+    {
+        "input_name": "B. Riley & Co.",
+        "output_name": "B. Riley & Co."
+    },
+    {
+        "input_name": "B. Riley & Co. LLC",
+        "output_name": "B. Riley & Co."
+    },
+    {
+        "input_name": "B. Riley FBR Inc.",
+        "output_name": "B. Riley FBR Inc."
+    },
+    {
+        "input_name": "B. Riley FBRInc.",
+        "output_name": "B. Riley FBR Inc."
+    },
+    {
+        "input_name": "BB & T Capital Markets a division of BB & T Securities LLC",
+        "output_name": "BB&T Capital Markets"
+    },
+    {
+        "input_name": "BB & T Capital Markets a division of BB & T SecuritiesLLC",
+        "output_name": "BB&T Capital Markets"
+    },
+    {
+        "input_name": "BB & T Capital Markets a division of BB & TSecuritiesLLC",
+        "output_name": "BB&T Capital Markets"
+    },
+    {
+        "input_name": "BB & T Capital Markets a divisionofBB & T Securities LLC",
+        "output_name": "BB&T Capital Markets"
+    },
+    {
+        "input_name": "BB & TCapitalMarketsadivisionofBB & TSecurities LLC",
+        "output_name": "BB&T Capital Markets"
+    },
+    {
+        "input_name": "BBVA Banco Continental",
+        "output_name": "BBVA Securities Inc."
+    },
+    {
+        "input_name": "BBVA Securities Inc.",
+        "output_name": "BBVA Securities Inc."
+    },
+    {
+        "input_name": "BBVA SecuritiesInc.",
+        "output_name": "BBVA Securities Inc."
+    },
+    {
+        "input_name": "BDO Capital & Investment Corporation",
+        "output_name": "BDO Capital & Investment Corporation"
+    },
+    {
+        "input_name": "BHF-BANK Aktiengesellschaft",
+        "output_name": "BHF-BANK Aktiengesellschaft"
+    },
+    {
+        "input_name": "BMO Capital Markets",
+        "output_name": "BMO Capital Markets"
+    },
+    {
+        "input_name": "BMO Capital Markets Corp",
+        "output_name": "BMO Capital Markets"
+    },
+    {
+        "input_name": "BMO Capital Markets Corp.",
+        "output_name": "BMO Capital Markets"
+    },
+    {
+        "input_name": "BMO Capital MarketsCorp.",
+        "output_name": "BMO Capital Markets"
+    },
+    {
+        "input_name": "BMOCapital Markets Corp.",
+        "output_name": "BMO Capital Markets"
+    },
+    {
+        "input_name": "BMONesbitt Burns Inc(1)",
+        "output_name": "BMO Capital Markets"
+    },
+    {
+        "input_name": "BNP Paribas Securities Corp.",
+        "output_name": "BNP Paribas Securities Corp"
+    },
+    {
+        "input_name": "BNY Mellon Capital Markets LLC",
+        "output_name": "BNY Mellon Capital Markets LLC"
+    },
+    {
+        "input_name": "BNY Mellon Capital MarketsLLC",
+        "output_name": "BNY Mellon Capital Markets LLC"
+    },
+    {
+        "input_name": "BOCI Asia Limited",
+        "output_name": "BOCI Asia Limited"
+    },
+    {
+        "input_name": "BOK Financial Securities Inc.",
+        "output_name": "BOK Financial Securities Inc."
+    },
+    {
+        "input_name": "BTG Pactual US Capital LLC",
+        "output_name": "BTG Pactual US Capital LLC"
+    },
+    {
+        "input_name": "BTIG LLC",
+        "output_name": "BTIG LLC"
+    },
+    {
+        "input_name": "BTIG LLC",
+        "output_name": "BTIG LLC"
+    },
+    {
+        "input_name": "BTIGLLC",
+        "output_name": "BTIG LLC"
+    },
+    {
+        "input_name": "Banca IMI S.p.A",
+        "output_name": "Banca IMI S.p.A"
+    },
+    {
+        "input_name": "Banca IMI S.p.A.",
+        "output_name": "Banca IMI S.p.A."
+    },
+    {
+        "input_name": "Banco BTG Pactual S.A.Cayman Branch",
+        "output_name": "Banco BTG Pactual S.A.Cayman Branch"
+    },
+    {
+        "input_name": "Banco Bradesco BBI S.A.",
+        "output_name": "Banco Bradesco BBI S.A."
+    },
+    {
+        "input_name": "Banco Bradesco BBIS.A.",
+        "output_name": "Banco Bradesco BBI S.A."
+    },
+    {
+        "input_name": "Banco Bradesco BBIS.A.(3)",
+        "output_name": "Banco Bradesco BBI S.A."
+    },
+    {
+        "input_name": "Banco Internacional del Per S.A.A.Interbank",
+        "output_name": "Banco Internacional del Per S.A.A.Interbank"
+    },
+    {
+        "input_name": "Banco Santander S.A.",
+        "output_name": "Banco Santander S.A."
+    },
+    {
+        "input_name": "Banco do Brasil SecuritiesLLC",
+        "output_name": "Banco do Brasil SecuritiesLLC"
+    },
+    {
+        "input_name": "Bank of Communications Co. Ltd. Macau Branch",
+        "output_name": "Bank of Communications Co. Ltd. Macau Branch"
+    },
+    {
+        "input_name": "Barclays Capital Inc",
+        "output_name": "Barclays Capital Inc"
+    },
+    {
+        "input_name": "Barclays Capital Inc.",
+        "output_name": "Barclays Capital Inc"
+    },
+    {
+        "input_name": "Barclays CapitalInc.",
+        "output_name": "Barclays Capital Inc"
+    },
+    {
+        "input_name": "Barrington Research Associates Inc.",
+        "output_name": "Barrington Research Associates Inc."
+    },
+    {
+        "input_name": "Barrington Research AssociatesInc.",
+        "output_name": "Barrington Research Associates Inc."
+    },
+    {
+        "input_name": "Berenberg Capital Markets LLC",
+        "output_name": "Berenberg Capital Markets LLC"
+    },
+    {
+        "input_name": "Blackstone Advisory Partners L.P.",
+        "output_name": "Blackstone Advisory Partners L.P."
+    },
+    {
+        "input_name": "Blackwell Partners LLC Series A",
+        "output_name": "Blackwell Partners LLC Series A"
+    },
+    {
+        "input_name": "Blaylock Beal Van LLC",
+        "output_name": "Blaylock Beal Van LLC"
+    },
+    {
+        "input_name": "Blaylock Van LLC",
+        "output_name": "Blaylock Van LLC"
+    },
+    {
+        "input_name": "Boenning & Scattergood Inc.",
+        "output_name": "Boenning & Scattergood Inc."
+    },
+    {
+        "input_name": "BofA Securities Inc.",
+        "output_name": "Merrill Lynch Pierce Fenner & Smith Incorporated"
+    },
+    {
+        "input_name": "BofA SecuritiesInc.",
+        "output_name": "Merrill Lynch Pierce Fenner & Smith Incorporated"
+    },
+    {
+        "input_name": "BofASecuritiesInc.",
+        "output_name": "Merrill Lynch Pierce Fenner & Smith Incorporated"
+    },
+    {
+        "input_name": "Brean Capital LLC",
+        "output_name": "Brean Capital LLC"
+    },
+    {
+        "input_name": "Bryan Garnier & Co. Limited",
+        "output_name": "Bryan Garnier & Co. Limited"
+    },
+    {
+        "input_name": "Bryan Garnier & Co...",
+        "output_name": "Bryan Garnier & Co. Limited"
+    },
+    {
+        "input_name": "C & Co/PrinceRidge LLC",
+        "output_name": "C & Co/PrinceRidge LLC"
+    },
+    {
+        "input_name": "C.K. Cooper & Company Inc.",
+        "output_name": "C.K. Cooper & Company Inc."
+    },
+    {
+        "input_name": "C.L. King & Associates Inc.",
+        "output_name": "C.L. King & Associates Inc."
+    },
+    {
+        "input_name": "C.L. King & Associaties Inc.",
+        "output_name": "C.L. King & Associaties Inc."
+    },
+    {
+        "input_name": "CIBC World Markets Corp.",
+        "output_name": "CIBC World Markets Inc."
+    },
+    {
+        "input_name": "CIBC World Markets Inc.",
+        "output_name": "CIBC World Markets Inc."
+    },
+    {
+        "input_name": "CIBC World MarketsCorp.",
+        "output_name": "CIBC World Markets Inc."
+    },
+    {
+        "input_name": "CIBCWorld Markets Corp.",
+        "output_name": "CIBC World Markets Inc."
+    },
+    {
+        "input_name": "CIM Securities LLC",
+        "output_name": "CIM Securities LLC"
+    },
+    {
+        "input_name": "CIMB Securities Limited",
+        "output_name": "CIMB Securities Limited"
+    },
+    {
+        "input_name": "CJS Securities Inc.",
+        "output_name": "CJS Securities Inc."
+    },
+    {
+        "input_name": "CLSA Limited",
+        "output_name": "CLSA Limited"
+    },
+    {
+        "input_name": "CRT Capital Group LLC",
+        "output_name": "Canaccord Genuity Inc."
+    },
+    {
+        "input_name": "Canaccord Genuity Inc.",
+        "output_name": "Canaccord Genuity Inc."
+    },
+    {
+        "input_name": "Canaccord Genuity Corp.",
+        "output_name": "Canaccord Genuity Inc."
+    },
+    {
+        "input_name": "Canaccord Genuity Inc",
+        "output_name": "Canaccord Genuity Inc"
+    },
+    {
+        "input_name": "Canaccord Genuity Inc.",
+        "output_name": "Canaccord Genuity Inc."
+    },
+    {
+        "input_name": "Canaccord Genuity LLC",
+        "output_name": "Canaccord Genuity Inc."
+    },
+    {
+        "input_name": "Canaccord Genuity LLC*",
+        "output_name": "Canaccord Genuity Inc."
+    },
+    {
+        "input_name": "Canaccord GenuityInc.",
+        "output_name": "Canaccord Genuity Inc."
+    },
+    {
+        "input_name": "Cantor Fitzgerald & Co.",
+        "output_name": "Cantor Fitzgerald & Co."
+    },
+    {
+        "input_name": "CantorFitzgerald & Co.",
+        "output_name": "Cantor Fitzgerald & Co."
+    },
+    {
+        "input_name": "Capital One Securities Inc.",
+        "output_name": "Capital One Securities Inc."
+    },
+    {
+        "input_name": "Capital One SecuritiesInc.",
+        "output_name": "Capital One Securities Inc."
+    },
+    {
+        "input_name": "Capital One Southcoast Inc.",
+        "output_name": "Capital One Securities Inc."
+    },
+    {
+        "input_name": "Capital Ventures International",
+        "output_name": "Capital Ventures International"
+    },
+    {
+        "input_name": "CastleOak Securities L.P.",
+        "output_name": "CastleOak Securities L.P."
+    },
+    {
+        "input_name": "Cathay Securities Corporation Offshore Securities Unit",
+        "output_name": "Cathay Securities Corporation Offshore Securities Unit"
+    },
+    {
+        "input_name": "Chardan Capital Markets LLC",
+        "output_name": "Chardan Capital Markets LLC"
+    },
+    {
+        "input_name": "Chardan Capital Markets LLC",
+        "output_name": "Chardan Capital Markets LLC"
+    },
+    {
+        "input_name": "China Everbright Securities (HK) Limited",
+        "output_name": "China Everbright Securities (HK) Limited"
+    },
+    {
+        "input_name": "China International Capital Corporation Hong Kong Securities Limited",
+        "output_name": "China International Capital Corporation Hong Kong Securities Limited"
+    },
+    {
+        "input_name": "China International Capital Corporation HongKong Securities Limited",
+        "output_name": "China International Capital Corporation HongKong Securities Limited"
+    },
+    {
+        "input_name": "China Merchants Securities (HK) Co. Limited",
+        "output_name": "China Merchants Securities (HK) Co. Ltd."
+    },
+    {
+        "input_name": "China Merchants Securities (HK) Co. Ltd.",
+        "output_name": "China Merchants Securities (HK) Co. Ltd."
+    },
+    {
+        "input_name": "China Merchants Securities (HK)Co.Ltd.",
+        "output_name": "China Merchants Securities (HK) Co. Ltd."
+    },
+    {
+        "input_name": "China Renaissance Securities (Hong Kong) Limited",
+        "output_name": "China Renaissance Securities (Hong Kong) Limited"
+    },
+    {
+        "input_name": "China Renaissance Securities (HongKong) Limited",
+        "output_name": "China Renaissance Securities (Hong Kong) Limited"
+    },
+    {
+        "input_name": "Citigroup Global Markets Inc.",
+        "output_name": "Citigroup Global Markets Inc."
+    },
+    {
+        "input_name": "Citigroup Global Capital Markets Inc.",
+        "output_name": "Citigroup Global Markets Inc."
+    },
+    {
+        "input_name": "Citigroup Global Markets Inc",
+        "output_name": "Citigroup Global Markets Inc."
+    },
+    {
+        "input_name": "Citigroup Global Markets Inc.",
+        "output_name": "Citigroup Global Markets Inc."
+    },
+    {
+        "input_name": "Citigroup Global MarketsInc.",
+        "output_name": "Citigroup Global Markets Inc."
+    },
+    {
+        "input_name": "CitigroupGlobalMarkets Inc.",
+        "output_name": "Citigroup Global Markets Inc."
+    },
+    {
+        "input_name": "Citizens Capital Markets Inc.",
+        "output_name": "Citizens Capital Markets Inc."
+    },
+    {
+        "input_name": "Clarkson Capital Markets LLC",
+        "output_name": "Clarkson Capital Markets LLC"
+    },
+    {
+        "input_name": "Clarksons Platou Securities Inc.",
+        "output_name": "Clarksons Platou Securities Inc."
+    },
+    {
+        "input_name": "Code Advisors LLC",
+        "output_name": "Code Advisors LLC"
+    },
+    {
+        "input_name": "Comerica Securities Inc.",
+        "output_name": "Comerica Securities Inc."
+    },
+    {
+        "input_name": "Comerica SecuritiesInc.",
+        "output_name": "Comerica Securities Inc."
+    },
+    {
+        "input_name": "Common stock options issued and outstanding",
+        "output_name": "Common stock options issued and outstanding"
+    },
+    {
+        "input_name": "Compass Point Research & Trading LLC",
+        "output_name": "Compass Point Research & Trading LLC"
+    },
+    {
+        "input_name": "Compass Point Research & TradingLLC",
+        "output_name": "Compass Point Research & Trading LLC"
+    },
+    {
+        "input_name": "Connaught (UK) Limited",
+        "output_name": "Connaught (UK) Limited"
+    },
+    {
+        "input_name": "Contribution in kind of the PCPS",
+        "output_name": "Contribution in kind of the PCPS"
+    },
+    {
+        "input_name": "Conversion of Series A convertible preferred stock",
+        "output_name": "Conversion of Series A convertible preferred stock"
+    },
+    {
+        "input_name": "Conversion of Series B convertible preferred stock",
+        "output_name": "Conversion of Series B convertible preferred stock"
+    },
+    {
+        "input_name": "Conversion of Series C convertible preferred stock",
+        "output_name": "Conversion of Series C convertible preferred stock"
+    },
+    {
+        "input_name": "Conversion of Series D convertible preferred stock",
+        "output_name": "Conversion of Series D convertible preferred stock"
+    },
+    {
+        "input_name": "Coperatieve Centrale Raiffeisen-Boerenleenbank B.A.",
+        "output_name": "Coperatieve Centrale Raiffeisen-Boerenleenbank B.A."
+    },
+    {
+        "input_name": "Cormark Securities (USA) Limited",
+        "output_name": "Cormark Securities (USA) Limited"
+    },
+    {
+        "input_name": "Cowen and Company",
+        "output_name": "Cowen and Company"
+    },
+    {
+        "input_name": "Cowen and Company LLC",
+        "output_name": "Cowen and Company"
+    },
+    {
+        "input_name": "Cowen and CompanyLLC",
+        "output_name": "Cowen and Company"
+    },
+    {
+        "input_name": "Cowenand Company LLC",
+        "output_name": "Cowen and Company"
+    },
+    {
+        "input_name": "CowenandCompany LLC",
+        "output_name": "Cowen and Company"
+    },
+    {
+        "input_name": "Craig-Hallum Capital Group LLC",
+        "output_name": "Craig-Hallum Capital Group LLC"
+    },
+    {
+        "input_name": "Credicorp Capital Sociedad Agente de BolsaS.A.(4)",
+        "output_name": "Credicorp Capital Sociedad Agente de BolsaS.A.(4)"
+    },
+    {
+        "input_name": "Credit Agricole Securities (USA) Inc.",
+        "output_name": "Credit Agricole Securities (USA) Inc."
+    },
+    {
+        "input_name": "Credit Agricole Securities (USA)Inc.",
+        "output_name": "Credit Agricole Securities (USA) Inc."
+    },
+    {
+        "input_name": "Credit Suisse Securities (USA) L.L.C.",
+        "output_name": "Credit Suisse Securities (USA) LLC"
+    },
+    {
+        "input_name": "Credit Suisse Securities (USA) LLC",
+        "output_name": "Credit Suisse Securities (USA) LLC"
+    },
+    {
+        "input_name": "Credit Suisse Securities (USA) LLC and Credit Suisse Securities (Canada) LLC",
+        "output_name": "Credit Suisse Securities (USA) LLC"
+    },
+    {
+        "input_name": "Credit Suisse Securities (USA)LLC",
+        "output_name": "Credit Suisse Securities (USA) LLC"
+    },
+    {
+        "input_name": "Credit Suisse Securities(USA)LLC",
+        "output_name": "Credit Suisse Securities (USA) LLC"
+    },
+    {
+        "input_name": "Cuttone & Co. Inc.",
+        "output_name": "Cuttone & Co. Inc."
+    },
+    {
+        "input_name": "Cuttone & Co. Inc.",
+        "output_name": "Cuttone & Co. Inc."
+    },
+    {
+        "input_name": "D.A. Davidson & Co.",
+        "output_name": "D.A. Davidson & Co."
+    },
+    {
+        "input_name": "D.A. Davidson & Co.",
+        "output_name": "D.A. Davidson & Co."
+    },
+    {
+        "input_name": null,
+        "output_name": null
+    },
+    {
+        "input_name": "DAFNA LifeScience Market Neutral L.P.",
+        "output_name": "DAFNA LifeScience L.P."
+    },
+    {
+        "input_name": "DAFNA LifeScience Select L.P.",
+        "output_name": "DAFNA LifeScience L.P."
+    },
+    {
+        "input_name": "DAFNA Lifescience LP",
+        "output_name": "DAFNA LifeScience L.P."
+    },
+    {
+        "input_name": "DAFNA Lifescience Market Neutral LP",
+        "output_name": "DAFNA LifeScience L.P."
+    },
+    {
+        "input_name": "DAFNA Lifescience Select LP",
+        "output_name": "DAFNA LifeScience L.P."
+    },
+    {
+        "input_name": "DBS Bank Ltd.",
+        "output_name": "DBS Bank Ltd."
+    },
+    {
+        "input_name": "DNB Markets Inc.",
+        "output_name": "DNB Markets Inc."
+    },
+    {
+        "input_name": "DNB MarketsInc.",
+        "output_name": "DNB MarketsInc."
+    },
+    {
+        "input_name": "DVB Capital Markets LLC",
+        "output_name": "DVB Capital Markets LLC"
+    },
+    {
+        "input_name": "Daiwa Capital Markets AmericaInc.",
+        "output_name": "Daiwa Capital Markets AmericaInc."
+    },
+    {
+        "input_name": "Danske Markets Inc.",
+        "output_name": "Danske Markets Inc."
+    },
+    {
+        "input_name": "Dawson James Securities Inc.",
+        "output_name": "Dawson James Securities Inc."
+    },
+    {
+        "input_name": "Deutsche Bank Securities",
+        "output_name": "Deutsche Bank Securities"
+    },
+    {
+        "input_name": "Deutsche Bank Securities Inc",
+        "output_name": "Deutsche Bank Securities"
+    },
+    {
+        "input_name": "Deutsche Bank Securities Inc.",
+        "output_name": "Deutsche Bank Securities"
+    },
+    {
+        "input_name": "Deutsche Bank Securities Inc.*",
+        "output_name": "Deutsche Bank Securities"
+    },
+    {
+        "input_name": "Deutsche Bank SecuritiesInc.",
+        "output_name": "Deutsche Bank Securities"
+    },
+    {
+        "input_name": "DeutscheBankSecurities Inc.",
+        "output_name": "Deutsche Bank Securities"
+    },
+    {
+        "input_name": "Dominick & Dominick LLC",
+        "output_name": "Dominick & Dominick LLC"
+    },
+    {
+        "input_name": "Dowling & Partners Securities LLC",
+        "output_name": "Dowling & Partners Securities LLC"
+    },
+    {
+        "input_name": "Dowling & Partners SecuritiesLLC",
+        "output_name": "Dowling & Partners Securities LLC"
+    },
+    {
+        "input_name": "Drexel Hamilton LLC",
+        "output_name": "Drexel Hamilton LLC"
+    },
+    {
+        "input_name": "Drexel Hamilton LLC.",
+        "output_name": "Drexel Hamilton LLC"
+    },
+    {
+        "input_name": "DrexelHamilton LLC",
+        "output_name": "Drexel Hamilton LLC"
+    },
+    {
+        "input_name": "EA Markets Securities LLC",
+        "output_name": "EA Markets Securities LLC"
+    },
+    {
+        "input_name": "Early exercised common stock subject to future vesting",
+        "output_name": "Early exercised common stock subject to future vesting"
+    },
+    {
+        "input_name": "EarlyBirdCapital Inc.",
+        "output_name": "EarlyBirdCapital Inc."
+    },
+    {
+        "input_name": "Equity compensation plans not approved by stockholders Directors Compensation Plan 2008 Equity Incentive Plan",
+        "output_name": "Equity compensation plans not approved by stockholders Directors Compensation Plan 2008 Equity Incentive Plan"
+    },
+    {
+        "input_name": "Evercore Group L.L.C",
+        "output_name": "Evercore Group LLC"
+    },
+    {
+        "input_name": "Evercore Group L.L.C.",
+        "output_name": "Evercore Group LLC"
+    },
+    {
+        "input_name": "Evercore Group LLC",
+        "output_name": "Evercore Group LLC"
+    },
+    {
+        "input_name": "Evercore GroupL.L.C.",
+        "output_name": "Evercore Group LLC"
+    },
+    {
+        "input_name": "Exercise Conversion Option Convertible Note 2018",
+        "output_name": "Exercise Conversion Option Convertible Note 2018"
+    },
+    {
+        "input_name": "FBR Capital Markets & Co",
+        "output_name": "FBR Capital Markets & Co"
+    },
+    {
+        "input_name": "FBR Capital Markets & Co.",
+        "output_name": "FBR Capital Markets & Co"
+    },
+    {
+        "input_name": "FBR Capital Markets & Co. (FBR)",
+        "output_name": "FBR Capital Markets & Co"
+    },
+    {
+        "input_name": "FBRCapitalMarkets & Co.",
+        "output_name": "FBR Capital Markets & Co"
+    },
+    {
+        "input_name": "Fearnley Securities AS",
+        "output_name": "Fearnley Securities AS"
+    },
+    {
+        "input_name": "Feltl and Company Inc.",
+        "output_name": "Feltl and Company Inc."
+    },
+    {
+        "input_name": "Fifth Third Securities Inc.",
+        "output_name": "Fifth Third Securities Inc."
+    },
+    {
+        "input_name": "First Analysis Securities Corporation",
+        "output_name": "First Analysis Securities Corporation"
+    },
+    {
+        "input_name": "First Capital Increase",
+        "output_name": "First Capital Increase"
+    },
+    {
+        "input_name": "Foros Securities LLC",
+        "output_name": "Foros Securities LLC"
+    },
+    {
+        "input_name": "Franklin Strategic Series Franklin Biotechnology Discovery Fund",
+        "output_name": "Franklin Strategic Series Franklin Biotechnology Discovery Fund"
+    },
+    {
+        "input_name": "Franklin Templeton Investment Funds Franklin Biotechnology Discovery Fund",
+        "output_name": "Franklin Templeton Investment Funds Franklin Biotechnology Discovery Fund"
+    },
+    {
+        "input_name": "Freeman & Co. Securities LLC",
+        "output_name": "Freeman & Co. Securities LLC"
+    },
+    {
+        "input_name": "Global Hunter Securities",
+        "output_name": "Global Hunter Securities"
+    },
+    {
+        "input_name": "Global Hunter Securities LLC",
+        "output_name": "Global Hunter Securities"
+    },
+    {
+        "input_name": "Goldman Sachs& Co.",
+        "output_name": "Goldman Sachs & Co"
+    },
+    {
+        "input_name": "Goldman Sachs & Co",
+        "output_name": "Goldman Sachs & Co"
+    },
+    {
+        "input_name": "Goldman Sachs & Co.",
+        "output_name": "Goldman Sachs & Co"
+    },
+    {
+        "input_name": "Goldman Sachs & Co. LLC",
+        "output_name": "Goldman Sachs & Co"
+    },
+    {
+        "input_name": "Goldman Sachs & Co..",
+        "output_name": "Goldman Sachs & Co"
+    },
+    {
+        "input_name": "Goldman Sachs & Co.LLC",
+        "output_name": "Goldman Sachs & Co"
+    },
+    {
+        "input_name": "Goldman Sachs (Asia) L.L.C.",
+        "output_name": "Goldman Sachs & Co"
+    },
+    {
+        "input_name": "Goldman Sachs (Asia) L.L.C.*",
+        "output_name": "Goldman Sachs & Co"
+    },
+    {
+        "input_name": "Goldman Sachs& Co. LLC",
+        "output_name": "Goldman Sachs & Co"
+    },
+    {
+        "input_name": "GoldmanSachs & Co.",
+        "output_name": "Goldman Sachs & Co"
+    },
+    {
+        "input_name": "GoldmanSachs & Co.LLC",
+        "output_name": "Goldman Sachs & Co"
+    },
+    {
+        "input_name": "Great Pacific Securities",
+        "output_name": "Great Pacific Securities"
+    },
+    {
+        "input_name": "Growth Equity Opportunities Fund IV LLC",
+        "output_name": "Growth Equity Opportunities Fund IV LLC"
+    },
+    {
+        "input_name": "Guggenheim Securities LLC",
+        "output_name": "Guggenheim Securities LLC"
+    },
+    {
+        "input_name": "Guggenheim SecuritiesLLC",
+        "output_name": "Guggenheim Securities LLC"
+    },
+    {
+        "input_name": "H.C. Wainwright & Co. LLC",
+        "output_name": "H.C. Wainwright & Co. LLC"
+    },
+    {
+        "input_name": "H.C.Wainwright & Co.LLC",
+        "output_name": "H.C. Wainwright & Co. LLC"
+    },
+    {
+        "input_name": "HSBC Securities (USA) Inc.",
+        "output_name": "HSBC Securities (USA) Inc."
+    },
+    {
+        "input_name": "HSBC Securities (USA)Inc.",
+        "output_name": "HSBC Securities (USA) Inc."
+    },
+    {
+        "input_name": "Haitong International Securities Company Limited",
+        "output_name": "Haitong International Securities Company Limited"
+    },
+    {
+        "input_name": "Halliday Financial LLC",
+        "output_name": "Halliday Financial LLC"
+    },
+    {
+        "input_name": "Height Securities LLC",
+        "output_name": "Height Securities LLC"
+    },
+    {
+        "input_name": "Houlihan Lokey Capital Inc.",
+        "output_name": "Houlihan Lokey Capital Inc."
+    },
+    {
+        "input_name": "Houlihan Lokey CapitalInc.",
+        "output_name": "Houlihan Lokey Capital Inc."
+    },
+    {
+        "input_name": "Hovde Group LLC",
+        "output_name": "Hovde Group LLC"
+    },
+    {
+        "input_name": "I-Bankers Securities Inc.",
+        "output_name": "I-Bankers Securities Inc."
+    },
+    {
+        "input_name": "I-Bankers Securities Inc.",
+        "output_name": "I-Bankers Securities Inc."
+    },
+    {
+        "input_name": "I-Bankers SecuritiesInc.",
+        "output_name": "I-Bankers Securities Inc."
+    },
+    {
+        "input_name": "IBERIA Capital Partners L.L.C.",
+        "output_name": "IBERIA Capital Partners L.L.C."
+    },
+    {
+        "input_name": "ICBC International Securities Limited*",
+        "output_name": "ICBC International Securities Limited*"
+    },
+    {
+        "input_name": "IFS Securities Inc.",
+        "output_name": "IFS Securities Inc."
+    },
+    {
+        "input_name": "ING Financial Markets LLC",
+        "output_name": "ING Financial Markets LLC"
+    },
+    {
+        "input_name": "ING Financial MarketsLLC",
+        "output_name": "ING Financial Markets LLC"
+    },
+    {
+        "input_name": "Imperial Capital LLC",
+        "output_name": "Imperial Capital LLC"
+    },
+    {
+        "input_name": "Imperial CapitalLLC",
+        "output_name": "Imperial Capital LLC"
+    },
+    {
+        "input_name": "Income on financial assets",
+        "output_name": "Income on financial assets"
+    },
+    {
+        "input_name": "Ingalls & Snyder LLC",
+        "output_name": "Ingalls & Snyder LLC"
+    },
+    {
+        "input_name": "Intrepid Partners LLC",
+        "output_name": "Intrepid Partners LLC"
+    },
+    {
+        "input_name": "Itau BBA USA Securities Inc.",
+        "output_name": "Itau BBA USA Securities Inc."
+    },
+    {
+        "input_name": "J & EDavy",
+        "output_name": "J & EDavy"
+    },
+    {
+        "input_name": "J.J.B. Hilliard W.L. Lyons LLC",
+        "output_name": "J.J.B. Hilliard W.L. Lyons LLC"
+    },
+    {
+        "input_name": "J.J.B. Hilliard W.L. LyonsLLC",
+        "output_name": "J.J.B. Hilliard W.L. Lyons LLC"
+    },
+    {
+        "input_name": "J.P. Morgan Securities Inc.",
+        "output_name": "JP Morgan Securities Inc."
+    },
+    {
+        "input_name": "J.P. Morgan Securities LLC",
+        "output_name": "JP Morgan Securities Inc."
+    },
+    {
+        "input_name": "J.P. Morgan Securities LLC.",
+        "output_name": "JP Morgan Securities Inc."
+    },
+    {
+        "input_name": "J.P. Morgan SecuritiesLLC",
+        "output_name": "JP Morgan Securities Inc."
+    },
+    {
+        "input_name": "J.P. Turner & Company LLC",
+        "output_name": "JP Morgan Securities Inc."
+    },
+    {
+        "input_name": "J.P.Morgan Securities LLC",
+        "output_name": "JP Morgan Securities Inc."
+    },
+    {
+        "input_name": "J.P.Morgan SecuritiesLLC",
+        "output_name": "JP Morgan Securities Inc."
+    },
+    {
+        "input_name": "J.P.MorganSecuritiesLLC",
+        "output_name": "JP Morgan Securities Inc."
+    },
+    {
+        "input_name": "JMP Securities LLC",
+        "output_name": "JMP Securities LLC"
+    },
+    {
+        "input_name": "JMP SecuritiesLLC",
+        "output_name": "JMP Securities LLC"
+    },
+    {
+        "input_name": "JMPSecuritiesLLC",
+        "output_name": "JMP Securities LLC"
+    },
+    {
+        "input_name": "JVB FinancialGroup LLC",
+        "output_name": "JVB FinancialGroup LLC"
+    },
+    {
+        "input_name": "Janney Montgomery Scott LLC",
+        "output_name": "Janney Montgomery Scott LLC"
+    },
+    {
+        "input_name": "Janney Montgomery ScottLLC",
+        "output_name": "Janney Montgomery Scott LLC"
+    },
+    {
+        "input_name": "Jefferies & Company Inc.",
+        "output_name": "Jefferies LLC"
+    },
+    {
+        "input_name": "Jefferies LLC",
+        "output_name": "Jefferies LLC"
+    },
+    {
+        "input_name": "Jefferies LLC.",
+        "output_name": "Jefferies LLC"
+    },
+    {
+        "input_name": "JefferiesLLC",
+        "output_name": "Jefferies LLC"
+    },
+    {
+        "input_name": "Johnson Rice & Company L.L.C.",
+        "output_name": "Johnson Rice & Company L.L.C."
+    },
+    {
+        "input_name": "JonesTrading Institutional ServicesLLC",
+        "output_name": "JonesTrading Institutional ServicesLLC"
+    },
+    {
+        "input_name": "Joseph Gunnar & Co. LLC.",
+        "output_name": "Joseph Gunnar & Co. LLC."
+    },
+    {
+        "input_name": "KBC Securities USA Inc.",
+        "output_name": "KBC Securities USA Inc."
+    },
+    {
+        "input_name": "KKR Capital Markets LLC",
+        "output_name": "KKR Capital Markets LLC"
+    },
+    {
+        "input_name": "Keefe Bruyette & Woods Inc.",
+        "output_name": "Keefe Bruyette & Woods Inc."
+    },
+    {
+        "input_name": "Keefe Bruyette & WoodsInc.",
+        "output_name": "Keefe Bruyette & Woods Inc."
+    },
+    {
+        "input_name": "KeyBanc Capital Markets Inc.",
+        "output_name": "KeyBanc Capital Markets Inc."
+    },
+    {
+        "input_name": "KeyBanc Capital MarketsInc.",
+        "output_name": "KeyBanc Capital Markets Inc."
+    },
+    {
+        "input_name": "Keybanc Capital Markets Inc.",
+        "output_name": "KeyBanc Capital Markets Inc."
+    },
+    {
+        "input_name": "LOYAL3 Securities Inc.",
+        "output_name": "LOYAL3 Securities Inc."
+    },
+    {
+        "input_name": "LUMA Securities LLC",
+        "output_name": "LUMA Securities LLC"
+    },
+    {
+        "input_name": "Ladenburg Thalmann & Co. Inc.",
+        "output_name": "Ladenburg Thalmann & Co. Inc."
+    },
+    {
+        "input_name": "Ladenburg Thalmann & Co. Inc.",
+        "output_name": "Ladenburg Thalmann & Co. Inc."
+    },
+    {
+        "input_name": "Ladenburg Thalmann & Co.Inc.",
+        "output_name": "Ladenburg Thalmann & Co. Inc."
+    },
+    {
+        "input_name": "LadenburgThalmann & Co. Inc.",
+        "output_name": "Ladenburg Thalmann & Co. Inc."
+    },
+    {
+        "input_name": "Laidlaw & Company (UK) Ltd.",
+        "output_name": "Laidlaw & Company (UK) Ltd."
+    },
+    {
+        "input_name": "Lake Street Capital Markets LLC",
+        "output_name": "Lake Street Capital Markets LLC"
+    },
+    {
+        "input_name": "Lake Street CapitalMarkets LLC",
+        "output_name": "Lake Street Capital Markets LLC"
+    },
+    {
+        "input_name": "Lazard Capital Markets LLC",
+        "output_name": "Lazard Capital Markets LLC"
+    },
+    {
+        "input_name": "Lazard Frres & Co. Inc.",
+        "output_name": "Lazard Frres & Co. Inc."
+    },
+    {
+        "input_name": "Lebenthal & Co. LLC",
+        "output_name": "Lebenthal & Co. LLC"
+    },
+    {
+        "input_name": "Lebenthal & Co. LLC.",
+        "output_name": "Lebenthal & Co. LLC"
+    },
+    {
+        "input_name": "Lebenthal & Co.LLC",
+        "output_name": "Lebenthal & Co. LLC"
+    },
+    {
+        "input_name": "Leerink Partners LLC",
+        "output_name": "Leerink Partners LLC"
+    },
+    {
+        "input_name": "Leerink PartnersLLC",
+        "output_name": "Leerink Partners LLC"
+    },
+    {
+        "input_name": "Leerink Swann LLC",
+        "output_name": "Leerink Partners LLC"
+    },
+    {
+        "input_name": "Leerink SwannLLC",
+        "output_name": "Leerink Partners LLC"
+    },
+    {
+        "input_name": "LifeSci Capital LLC",
+        "output_name": "LifeSci Capital LLC"
+    },
+    {
+        "input_name": "LionTree Advisors LLC",
+        "output_name": "LionTree Advisors LLC"
+    },
+    {
+        "input_name": "Loop Capital Markets LLC",
+        "output_name": "Loop Capital Markets LLC"
+    },
+    {
+        "input_name": "MCS Capital Markets LLC",
+        "output_name": "MCS Capital Markets LLC"
+    },
+    {
+        "input_name": "MFR Securities Inc.",
+        "output_name": "MFR Securities Inc."
+    },
+    {
+        "input_name": "MLV & Co. LLC",
+        "output_name": "MLV & Co. LLC"
+    },
+    {
+        "input_name": "MUFG Securities Americas Inc.",
+        "output_name": "MUFG Securities Americas Inc."
+    },
+    {
+        "input_name": "MUFG Securities AmericasInc.",
+        "output_name": "MUFG Securities Americas Inc."
+    },
+    {
+        "input_name": "Macquarie Capital (USA) Inc.",
+        "output_name": "Macquarie Capital (USA) Inc."
+    },
+    {
+        "input_name": "Macquarie Capital (USA)Inc.",
+        "output_name": "Macquarie Capital (USA) Inc."
+    },
+    {
+        "input_name": "Macquarie Capital Markets CanadaLtd.(5)",
+        "output_name": "Macquarie Capital Markets CanadaLtd.(5)"
+    },
+    {
+        "input_name": "Maxim Group LLC",
+        "output_name": "Maxim Group LLC"
+    },
+    {
+        "input_name": "Maxim Group LLC",
+        "output_name": "Maxim Group LLC"
+    },
+    {
+        "input_name": "MaximGroup LLC",
+        "output_name": "Maxim Group LLC"
+    },
+    {
+        "input_name": "MaximGroupLLC",
+        "output_name": "Maxim Group LLC"
+    },
+    {
+        "input_name": "Mediobanca Banca di Credito Finanziario S.p.A",
+        "output_name": "Mediobanca Banca di Credito Finanziario S.p.A"
+    },
+    {
+        "input_name": "Merrill Lynch Pierce Fenner & Smith Incorporated",
+        "output_name": "Merrill Lynch Pierce Fenner & Smith Incorporated"
+    },
+    {
+        "input_name": "Merrill Lynch Pierce Fenner & Smith↵Incorporated",
+        "output_name": "Merrill Lynch Pierce Fenner & Smith Incorporated"
+    },
+    {
+        "input_name": "Merrill Lynch Pierce Fenner & Smith↵Incorporated.",
+        "output_name": "Merrill Lynch Pierce Fenner & Smith Incorporated"
+    },
+    {
+        "input_name": "Merrill Lynch Pierce Fenner & Smith ↵Incorporated",
+        "output_name": "Merrill Lynch Pierce Fenner & Smith Incorporated"
+    },
+    {
+        "input_name": "Merrill Lynch Pierce Fenner & Smith Incorporated",
+        "output_name": "Merrill Lynch Pierce Fenner & Smith Incorporated"
+    },
+    {
+        "input_name": "Merrill Lynch Pierce Fenner & SmithIncorporated",
+        "output_name": "Merrill Lynch Pierce Fenner & Smith Incorporated"
+    },
+    {
+        "input_name": "Merrill Lynch Pierce Fenner & SmithIncorporated*",
+        "output_name": "Merrill Lynch Pierce Fenner & Smith Incorporated"
+    },
+    {
+        "input_name": "Merrill Lynch Pierce Fenner and SmithIncorporated",
+        "output_name": "Merrill Lynch Pierce Fenner & Smith Incorporated"
+    },
+    {
+        "input_name": "MerrillLynch Pierce Fenner & SmithIncorporated",
+        "output_name": "Merrill Lynch Pierce Fenner & Smith Incorporated"
+    },
+    {
+        "input_name": "MerrillLynchPierceFenner & SmithIncorporated",
+        "output_name": "Merrill Lynch Pierce Fenner & Smith Incorporated"
+    },
+    {
+        "input_name": "Miller Tabak + Co. LLC",
+        "output_name": "Miller Tabak + Co. LLC"
+    },
+    {
+        "input_name": "Mischler Financial Group Inc.",
+        "output_name": "Mischler Financial Group Inc."
+    },
+    {
+        "input_name": "Mitsubishi UFJ Securities (USA) Inc.",
+        "output_name": "Mitsubishi UFJ Securities (USA) Inc."
+    },
+    {
+        "input_name": "Mitsubishi UFJ Securities (USA)Inc.",
+        "output_name": "Mitsubishi UFJ Securities (USA) Inc."
+    },
+    {
+        "input_name": "Mitsubishi UFJ Securities(USA) Inc.",
+        "output_name": "Mitsubishi UFJ Securities (USA) Inc."
+    },
+    {
+        "input_name": "Mitsubishi UFJSecurities (USA) Inc.",
+        "output_name": "Mitsubishi UFJ Securities (USA) Inc."
+    },
+    {
+        "input_name": "Mizuho Securities USA Inc.",
+        "output_name": "Mizuho Securities USA LLC"
+    },
+    {
+        "input_name": "Mizuho Securities USA LLC",
+        "output_name": "Mizuho Securities USA LLC"
+    },
+    {
+        "input_name": "Mizuho Securities USAInc.",
+        "output_name": "Mizuho Securities USA LLC"
+    },
+    {
+        "input_name": "Mizuho Securities USALLC",
+        "output_name": "Mizuho Securities USA LLC"
+    },
+    {
+        "input_name": "Moelis & Company LLC",
+        "output_name": "Moelis & Company LLC"
+    },
+    {
+        "input_name": "Moelis & CompanyLLC",
+        "output_name": "Moelis & Company LLC"
+    },
+    {
+        "input_name": "Morgan Stanley & Co. Incorporated",
+        "output_name": "Morgan Stanley & Co. LLC"
+    },
+    {
+        "input_name": "Morgan Stanley & Co. International plc",
+        "output_name": "Morgan Stanley & Co. LLC"
+    },
+    {
+        "input_name": "Morgan Stanley & Co. Internationalplc",
+        "output_name": "Morgan Stanley & Co. LLC"
+    },
+    {
+        "input_name": "Morgan Stanley & Co. LLC",
+        "output_name": "Morgan Stanley & Co. LLC"
+    },
+    {
+        "input_name": "Morgan Stanley & Co. LLC.",
+        "output_name": "Morgan Stanley & Co. LLC"
+    },
+    {
+        "input_name": "Morgan Stanley & Co.LLC",
+        "output_name": "Morgan Stanley & Co. LLC"
+    },
+    {
+        "input_name": "Morgan Stanley & Co.LLC.",
+        "output_name": "Morgan Stanley & Co. LLC"
+    },
+    {
+        "input_name": "Muriel Siebert & Co. Inc.",
+        "output_name": "Muriel Siebert & Co. Inc."
+    },
+    {
+        "input_name": "NA",
+        "output_name": "NA"
+    },
+    {
+        "input_name": "National Bank Financial Inc.",
+        "output_name": "National Bank Financial Inc."
+    },
+    {
+        "input_name": "National Bank FinancialInc.",
+        "output_name": "National Bank Financial Inc."
+    },
+    {
+        "input_name": "National Bank of Canada FinancialInc.",
+        "output_name": "National Bank of Canada Financial Inc."
+    },
+    {
+        "input_name": "National Securities Corporation",
+        "output_name": "National Securities Corporation"
+    },
+    {
+        "input_name": "Natixis",
+        "output_name": "Natixis"
+    },
+    {
+        "input_name": "Natixis Securities Americas LLC",
+        "output_name": "Natixis"
+    },
+    {
+        "input_name": "Natixis Securities AmericasLLC",
+        "output_name": "Natixis"
+    },
+    {
+        "input_name": "Needham & Company LLC",
+        "output_name": "Needham & Company LLC"
+    },
+    {
+        "input_name": "Needham & CompanyLLC",
+        "output_name": "Needham & Company LLC"
+    },
+    {
+        "input_name": "Needham and Company LLC",
+        "output_name": "Needham & Company LLC"
+    },
+    {
+        "input_name": "Newbridge Securities Corp.",
+        "output_name": "Newbridge Securities Corp."
+    },
+    {
+        "input_name": "Newbridge Securities Corporation",
+        "output_name": "Newbridge Securities Corp."
+    },
+    {
+        "input_name": "Nomura Securities International Inc.",
+        "output_name": "Nomura Securities International Inc."
+    },
+    {
+        "input_name": "Nomura Securities International Inc.(1)",
+        "output_name": "Nomura Securities International Inc."
+    },
+    {
+        "input_name": "Nomura Securities InternationalInc.",
+        "output_name": "Nomura Securities International Inc."
+    },
+    {
+        "input_name": "Northland Capital Markets(1)",
+        "output_name": "Northland Securities Inc."
+    },
+    {
+        "input_name": "Northland Securities Inc.",
+        "output_name": "Northland Securities Inc."
+    },
+    {
+        "input_name": "Northland SecuritiesInc.",
+        "output_name": "Northland Securities Inc."
+    },
+    {
+        "input_name": "Oppenheimer & Co. Inc.",
+        "output_name": "Oppenheimer & Co. Inc."
+    },
+    {
+        "input_name": "Oppenheimer & Co. Inc.*",
+        "output_name": "Oppenheimer & Co. Inc."
+    },
+    {
+        "input_name": "Oppenheimer & Co.Inc.",
+        "output_name": "Oppenheimer & Co. Inc."
+    },
+    {
+        "input_name": "Options issued and outstanding",
+        "output_name": "Options issued and outstanding"
+    },
+    {
+        "input_name": "Options to purchase ordinary shares",
+        "output_name": "Options to purchase ordinary shares"
+    },
+    {
+        "input_name": "Other finance Income",
+        "output_name": "Other finance Income"
+    },
+    {
+        "input_name": "PJT Partners LP",
+        "output_name": "PJT Partners LP"
+    },
+    {
+        "input_name": "PNC Capital Markets LLC",
+        "output_name": "PNC Capital Markets LLC"
+    },
+    {
+        "input_name": "PNC Capital MarketsLLC",
+        "output_name": "PNC Capital Markets LLC"
+    },
+    {
+        "input_name": "PNCCapitalMarketsLLC",
+        "output_name": "PNC Capital Markets LLC"
+    },
+    {
+        "input_name": "PT Mandiri Sekuritas",
+        "output_name": "PT Mandiri Sekuritas"
+    },
+    {
+        "input_name": "Pacific Crest Securities LLC",
+        "output_name": "Pacific Crest Securities LLC"
+    },
+    {
+        "input_name": "Pacific Crest Securities LLC.",
+        "output_name": "Pacific Crest Securities LLC"
+    },
+    {
+        "input_name": "Pacific Crest Securities a division of KeyBanc Capital Markets Inc.",
+        "output_name": "Pacific Crest Securities LLC"
+    },
+    {
+        "input_name": "Pacific Crest Securities a division of KeyBanc Capital MarketsInc.",
+        "output_name": "Pacific Crest Securities LLC"
+    },
+    {
+        "input_name": "Pacific Crest SecuritiesLLC",
+        "output_name": "Pacific Crest Securities LLC"
+    },
+    {
+        "input_name": "Panmure Gordon (UK) Limited",
+        "output_name": "Panmure Gordon (UK) Limited"
+    },
+    {
+        "input_name": "Pareto Securities AS",
+        "output_name": "Pareto Securities AS"
+    },
+    {
+        "input_name": "Penserra Securities LLC",
+        "output_name": "Penserra Securities LLC"
+    },
+    {
+        "input_name": "Petercam NV/SA",
+        "output_name": "Petercam NV/SA"
+    },
+    {
+        "input_name": "Petrie Partners Securities LLC",
+        "output_name": "Petrie Partners Securities LLC"
+    },
+    {
+        "input_name": "Piper Jaffray & Co",
+        "output_name": "Piper Jaffray & Co"
+    },
+    {
+        "input_name": "Piper Jaffray & Co.",
+        "output_name": "Piper Jaffray & Co"
+    },
+    {
+        "input_name": "Piper Jaffray & Co.*",
+        "output_name": "Piper Jaffray & Co"
+    },
+    {
+        "input_name": "R. Seelaus & Co. LLC",
+        "output_name": "R. Seelaus & Co. LLC"
+    },
+    {
+        "input_name": "RA Capital Healthcare Fund L.P.",
+        "output_name": "RA Capital Healthcare Fund L.P."
+    },
+    {
+        "input_name": "RB International Markets (USA) LLC",
+        "output_name": "RB International Markets (USA) LLC"
+    },
+    {
+        "input_name": "RBC Capital Markets LLC",
+        "output_name": "RBC Capital Markets LLC"
+    },
+    {
+        "input_name": "RBC Capital Markets LLC",
+        "output_name": "RBC Capital Markets LLC"
+    },
+    {
+        "input_name": "RBC Capital MarketsLLC",
+        "output_name": "RBC Capital Markets LLC"
+    },
+    {
+        "input_name": "RBC Dominion Securities Inc.",
+        "output_name": "RBC Dominion Securities Inc."
+    },
+    {
+        "input_name": "RBS Securities Inc.",
+        "output_name": "RBS Securities Inc."
+    },
+    {
+        "input_name": "RBS SecuritiesInc.",
+        "output_name": "RBS Securities Inc."
+    },
+    {
+        "input_name": "RS Platou Markets AS",
+        "output_name": "RS Platou Markets AS"
+    },
+    {
+        "input_name": "RSUs of Pluralsight Inc.",
+        "output_name": "RSUs of Pluralsight Inc."
+    },
+    {
+        "input_name": "Rabo Securities USA Inc.",
+        "output_name": "Rabo Securities USA Inc."
+    },
+    {
+        "input_name": "Raine Securities LLC",
+        "output_name": "Raine Securities LLC"
+    },
+    {
+        "input_name": "Raymond James & Associates Inc.",
+        "output_name": "Raymond James & Associates Inc."
+    },
+    {
+        "input_name": "Raymond James & Associates Inc.",
+        "output_name": "Raymond James & Associates Inc."
+    },
+    {
+        "input_name": "Raymond James & Associates",
+        "output_name": "Raymond James & Associates Inc."
+    },
+    {
+        "input_name": "Raymond James & Associates Inc",
+        "output_name": "Raymond James & Associates Inc."
+    },
+    {
+        "input_name": "Raymond James & Associates Inc.",
+        "output_name": "Raymond James & Associates Inc."
+    },
+    {
+        "input_name": "Raymond James & Associates Inc..",
+        "output_name": "Raymond James & Associates Inc."
+    },
+    {
+        "input_name": "Raymond James & Associates LLC",
+        "output_name": "Raymond James & Associates Inc."
+    },
+    {
+        "input_name": "Raymond James & AssociatesInc.",
+        "output_name": "Raymond James & Associates Inc."
+    },
+    {
+        "input_name": "RaymondJames & Associates Inc.",
+        "output_name": "Raymond James & Associates Inc."
+    },
+    {
+        "input_name": "Realty Capital Securities LLC",
+        "output_name": "Realty Capital Securities LLC"
+    },
+    {
+        "input_name": "Regions Securities LLC",
+        "output_name": "Regions Securities LLC"
+    },
+    {
+        "input_name": "Regions SecuritiesLLC",
+        "output_name": "Regions Securities LLC"
+    },
+    {
+        "input_name": "Remaining shares available under the 2015 Equity Incentive Plan",
+        "output_name": "Remaining shares available under the 2015 Equity Incentive Plan"
+    },
+    {
+        "input_name": "Remaining shares reserved for issuance under 2004 equity Incentive Plan",
+        "output_name": "Remaining shares reserved for issuance under 2004 equity Incentive Plan"
+    },
+    {
+        "input_name": "Renaissance Securities (Cyprus) Limited(1).",
+        "output_name": "Renaissance Securities (Cyprus) Limited(1)."
+    },
+    {
+        "input_name": "Restricted share units of Pluralsight Holdings",
+        "output_name": "Restricted share units of Pluralsight Holdings"
+    },
+    {
+        "input_name": "Restricted shares subject to future vesting",
+        "output_name": "Restricted shares subject to future vesting"
+    },
+    {
+        "input_name": "Restricted stock units outstanding under 2019 Equity Incentive Plan",
+        "output_name": "Restricted stock units outstanding under 2019 Equity Incentive Plan"
+    },
+    {
+        "input_name": "Robert W Baird & Co. Incorporated",
+        "output_name": "Robert W Baird & Co. Incorporated"
+    },
+    {
+        "input_name": "Robert W. Baird & Co. Incorporated",
+        "output_name": "Robert W Baird & Co. Incorporated"
+    },
+    {
+        "input_name": "Robert W. Baird & Co. Incorporated*",
+        "output_name": "Robert W Baird & Co. Incorporated"
+    },
+    {
+        "input_name": "Robert W. Baird & Co. Incorporated.",
+        "output_name": "Robert W Baird & Co. Incorporated"
+    },
+    {
+        "input_name": "Robert W. Baird & Co.Incorporated",
+        "output_name": "Robert W Baird & Co. Incorporated"
+    },
+    {
+        "input_name": "RobertW. Baird & Co. Incorporated",
+        "output_name": "Robert W Baird & Co. Incorporated"
+    },
+    {
+        "input_name": "Roth Capital Partners LLC",
+        "output_name": "Roth Capital Partners LLC"
+    },
+    {
+        "input_name": "Roth Capital PartnersLLC",
+        "output_name": "Roth Capital Partners LLC"
+    },
+    {
+        "input_name": "Rothschild Inc.",
+        "output_name": "Rothschild Inc."
+    },
+    {
+        "input_name": "SG Americas Securities LLC",
+        "output_name": "SG Americas Securities LLC"
+    },
+    {
+        "input_name": "SG Americas SecuritiesLLC",
+        "output_name": "SG Americas Securities LLC"
+    },
+    {
+        "input_name": "SMBC Nikko Capital Markets Limited",
+        "output_name": "SMBC Nikko Securities America Inc."
+    },
+    {
+        "input_name": "SMBC Nikko Securities America Inc.",
+        "output_name": "SMBC Nikko Securities America Inc."
+    },
+    {
+        "input_name": "SMBC Nikko Securities AmericaInc.",
+        "output_name": "SMBC Nikko Securities America Inc."
+    },
+    {
+        "input_name": "SVB Leerink LLC",
+        "output_name": "SVB Leerink LLC"
+    },
+    {
+        "input_name": "Samuel A. Ramirez & Co. Inc.",
+        "output_name": "Samuel A. Ramirez & Co. Inc."
+    },
+    {
+        "input_name": "Samuel A. Ramirez & Company Inc.",
+        "output_name": "Samuel A. Ramirez & Co. Inc."
+    },
+    {
+        "input_name": "Samuel A. Ramirez & CompanyInc.",
+        "output_name": "Samuel A. Ramirez & Co. Inc."
+    },
+    {
+        "input_name": "Sandler O'Neill & Partners L.P.",
+        "output_name": "Sandler O'Neill & Partners L.P."
+    },
+    {
+        "input_name": "Sandler O'Neill & PartnersL.P.",
+        "output_name": "Sandler O'Neill & Partners L.P."
+    },
+    {
+        "input_name": "Sandler O'Neill+ Partners L.P.",
+        "output_name": "Sandler O'Neill & Partners L.P."
+    },
+    {
+        "input_name": "Sandler ONeill & Partners L.P.",
+        "output_name": "Sandler O'Neill & Partners L.P."
+    },
+    {
+        "input_name": "Sanford C. Bernstein & Co. LLC",
+        "output_name": "Sanford C. Bernstein & Co. LLC"
+    },
+    {
+        "input_name": "Santander Investment Securities Inc.",
+        "output_name": "Santander Investment Securities Inc."
+    },
+    {
+        "input_name": "Scotia Capital (USA) Inc.",
+        "output_name": "Scotia Capital Inc."
+    },
+    {
+        "input_name": "Scotia Capital (USA)Inc.",
+        "output_name": "Scotia Capital Inc."
+    },
+    {
+        "input_name": "Scotia Capital Inc.",
+        "output_name": "Scotia Capital Inc."
+    },
+    {
+        "input_name": "Scotia Capital Inc.(2)",
+        "output_name": "Scotia Capital Inc."
+    },
+    {
+        "input_name": "ScotiaCapital (USA) Inc.",
+        "output_name": "Scotia Capital Inc."
+    },
+    {
+        "input_name": "Seaport Global Securities LLC",
+        "output_name": "Seaport Global Securities LLC"
+    },
+    {
+        "input_name": "Seaport Global SecuritiesLLC",
+        "output_name": "Seaport Global Securities LLC"
+    },
+    {
+        "input_name": "Second Capital Increase",
+        "output_name": "Second Capital Increase"
+    },
+    {
+        "input_name": "SeriesA-1 convertible preferred stock",
+        "output_name": "SeriesA-1 convertible preferred stock"
+    },
+    {
+        "input_name": "SeriesA-2 convertible preferred stock",
+        "output_name": "SeriesA-2 convertible preferred stock"
+    },
+    {
+        "input_name": "SeriesB-1 convertible preferred stock",
+        "output_name": "SeriesB-1 convertible preferred stock"
+    },
+    {
+        "input_name": "Shares authorized for future issuance under 2019 Equity Incentive Plan",
+        "output_name": "Shares authorized for future issuance under 2019 Equity Incentive Plan"
+    },
+    {
+        "input_name": "Shenwan Hongyuan Securities (H.K.) Limited",
+        "output_name": "Shenwan Hongyuan Securities (H.K.) Limited"
+    },
+    {
+        "input_name": "Sidoti & Company",
+        "output_name": "Sidoti & Company"
+    },
+    {
+        "input_name": "Sidoti & Company LLC",
+        "output_name": "Sidoti & Company"
+    },
+    {
+        "input_name": "Siebert Brandford Shank & Co. L.L.C.",
+        "output_name": "Siebert Brandford Shank & Co. L.L.C."
+    },
+    {
+        "input_name": "Siebert Cisneros Shank & Co. L.L.C.",
+        "output_name": "Siebert Cisneros Shank & Co. L.L.C."
+    },
+    {
+        "input_name": "Simmons & Company International",
+        "output_name": "Simmons & Company International"
+    },
+    {
+        "input_name": "Skandinaviska Enskilda Banken AB (publ)",
+        "output_name": "Skandinaviska Enskilda Banken AB (publ)"
+    },
+    {
+        "input_name": "Standard Bank Plc",
+        "output_name": "Standard Bank Plc"
+    },
+    {
+        "input_name": "Stephens Inc.",
+        "output_name": "Stephens Inc."
+    },
+    {
+        "input_name": "StephensInc.",
+        "output_name": "Stephens Inc."
+    },
+    {
+        "input_name": "Sterne Agee & Leach Inc.",
+        "output_name": "Sterne Agee & Leach Inc."
+    },
+    {
+        "input_name": "Stifel Nicolaus & Company Incorporated",
+        "output_name": "Stifel Financial Corp."
+    },
+    {
+        "input_name": "Stifel Financial Corp.",
+        "output_name": "Stifel Financial Corp."
+    },
+    {
+        "input_name": "Stifel Nicolaus & Company",
+        "output_name": "Stifel Financial Corp."
+    },
+    {
+        "input_name": "Stifel Nicolaus & Company Inc.",
+        "output_name": "Stifel Financial Corp."
+    },
+    {
+        "input_name": "Stifel Nicolaus & Company Incorporated",
+        "output_name": "Stifel Financial Corp."
+    },
+    {
+        "input_name": "Stifel Nicolaus & CompanyIncorporated",
+        "output_name": "Stifel Financial Corp."
+    },
+    {
+        "input_name": "StifelNicolaus & Company",
+        "output_name": "Stifel Financial Corp."
+    },
+    {
+        "input_name": "Stock options",
+        "output_name": "Stock options"
+    },
+    {
+        "input_name": "SunTrust Robinson Humphrey Inc.",
+        "output_name": "SunTrust Robinson Humphrey Inc."
+    },
+    {
+        "input_name": "SunTrust Robinson HumphreyInc.",
+        "output_name": "SunTrust Robinson Humphrey Inc."
+    },
+    {
+        "input_name": "Sunrise Securities Corp.",
+        "output_name": "Sunrise Securities Corp."
+    },
+    {
+        "input_name": "TD Securities (USA) LLC",
+        "output_name": "TD Securities (USA) LLC"
+    },
+    {
+        "input_name": "TDSecurities (USA)LLC",
+        "output_name": "TD Securities (USA) LLC"
+    },
+    {
+        "input_name": "TPG Capital BD LLC",
+        "output_name": "TPG Capital BD LLC"
+    },
+    {
+        "input_name": "Tekla Life Sciences Investors",
+        "output_name": "Tekla Life Sciences Investors"
+    },
+    {
+        "input_name": "Telsey Advisory Group",
+        "output_name": "Telsey Advisory Group"
+    },
+    {
+        "input_name": "Telsey Advisory Group LLC",
+        "output_name": "Telsey Advisory Group"
+    },
+    {
+        "input_name": "Telsey Advisory GroupLLC",
+        "output_name": "Telsey Advisory Group"
+    },
+    {
+        "input_name": "The Benchmark Company LLC",
+        "output_name": "The Benchmark Company LLC"
+    },
+    {
+        "input_name": "The Huntington Investment Company",
+        "output_name": "The Huntington Investment Company"
+    },
+    {
+        "input_name": "The Juda Group a division of Concept Capital Markets LLC",
+        "output_name": "The Juda Group a division of Concept Capital Markets LLC"
+    },
+    {
+        "input_name": "The Oak Ridge Financial Services Group Inc.",
+        "output_name": "The Oak Ridge Financial Services Group Inc."
+    },
+    {
+        "input_name": "The Williams Capital Group L.P.",
+        "output_name": "The Williams Capital Group L.P."
+    },
+    {
+        "input_name": "ThinkEquity a division of Fordham Financial Management Inc.",
+        "output_name": "ThinkEquity a division of Fordham Financial Management Inc."
+    },
+    {
+        "input_name": "Topeka Capital Markets Inc.",
+        "output_name": "Topeka Capital Markets Inc."
+    },
+    {
+        "input_name": "Total",
+        "output_name": "Total"
+    },
+    {
+        "input_name": "Toussaint Capital Partners LLC",
+        "output_name": "Toussaint Capital Partners LLC"
+    },
+    {
+        "input_name": "Tudor Pickering Holt & Co. Securities Inc.",
+        "output_name": "Tudor Pickering Holt & Co. Securities Inc."
+    },
+    {
+        "input_name": "Tudor Pickering Holt & Co. SecuritiesInc.",
+        "output_name": "Tudor Pickering Holt & Co. Securities Inc."
+    },
+    {
+        "input_name": "UBS Securities LLC",
+        "output_name": "UBS Securities LLC"
+    },
+    {
+        "input_name": "UBS Securities LLC.",
+        "output_name": "UBS Securities LLC"
+    },
+    {
+        "input_name": "UBS SecuritiesLLC",
+        "output_name": "UBS Securities LLC"
+    },
+    {
+        "input_name": "USCA Securities LLC",
+        "output_name": "USCA Securities LLC"
+    },
+    {
+        "input_name": "USCA SecuritiesLLC",
+        "output_name": "USCA SecuritiesLLC"
+    },
+    {
+        "input_name": "UniCredit Capital Markets LLC",
+        "output_name": "UniCredit Capital Markets LLC"
+    },
+    {
+        "input_name": "Union Gaming Securities LLC",
+        "output_name": "Union Gaming Securities LLC"
+    },
+    {
+        "input_name": "VHCP Co-Investment Holdings II LLC",
+        "output_name": "VHCP Co-Investment Holdings II LLC"
+    },
+    {
+        "input_name": "VHCP Co-Investment Holdings LLC",
+        "output_name": "VHCP Co-Investment Holdings LLC"
+    },
+    {
+        "input_name": "VTB Capital plc",
+        "output_name": "VTB Capital plc"
+    },
+    {
+        "input_name": "VTB Capitalplc",
+        "output_name": "VTB Capital plc"
+    },
+    {
+        "input_name": "Venrock Healthcare Capital Partners L.P.",
+        "output_name": "Venrock Healthcare Capital Partners L.P."
+    },
+    {
+        "input_name": "ViewTrade Securities Inc.",
+        "output_name": "ViewTrade Securities Inc."
+    },
+    {
+        "input_name": "WallachBeth Capital LLC",
+        "output_name": "WallachBeth Capital LLC"
+    },
+    {
+        "input_name": "Warrants to purchase redeemable convertible preferred stock",
+        "output_name": "Warrants to purchase redeemable convertible preferred stock"
+    },
+    {
+        "input_name": "Wedbush Securities Inc",
+        "output_name": "Wedbush Securities Inc"
+    },
+    {
+        "input_name": "Wedbush Securities Inc.",
+        "output_name": "Wedbush Securities Inc"
+    },
+    {
+        "input_name": "Wedbush SecuritiesInc.",
+        "output_name": "Wedbush Securities Inc"
+    },
+    {
+        "input_name": "Wells Fargo Securities Inc.",
+        "output_name": "Wells Fargo Securities LLC"
+    },
+    {
+        "input_name": "Wells Fargo Securities LLC",
+        "output_name": "Wells Fargo Securities LLC"
+    },
+    {
+        "input_name": "Wells Fargo SecuritiesLLC",
+        "output_name": "Wells Fargo Securities LLC"
+    },
+    {
+        "input_name": "WestPark Capital Inc.",
+        "output_name": "WestPark Capital Inc."
+    },
+    {
+        "input_name": "WestPark Capital Inc.",
+        "output_name": "WestPark Capital Inc."
+    },
+    {
+        "input_name": "Westpark Capital Inc.",
+        "output_name": "WestPark Capital Inc."
+    },
+    {
+        "input_name": "William Blair & Company L.L.C.",
+        "output_name": "William Blair & Company LLC"
+    },
+    {
+        "input_name": "William Blair & Company L.L.C",
+        "output_name": "William Blair & Company LLC"
+    },
+    {
+        "input_name": "William Blair & Company L.L.C.",
+        "output_name": "William Blair & Company LLC"
+    },
+    {
+        "input_name": "William Blair & Company L.L.C.*",
+        "output_name": "William Blair & Company LLC"
+    },
+    {
+        "input_name": "William Blair & Company LLC",
+        "output_name": "William Blair & Company LLC"
+    },
+    {
+        "input_name": "William Blair & CompanyL.L.C.",
+        "output_name": "William Blair & Company LLC"
+    },
+    {
+        "input_name": "WilliamBlair & Company L.L.C.",
+        "output_name": "William Blair & Company LLC"
+    },
+    {
+        "input_name": "Wolfe Trahan Securities",
+        "output_name": "Wolfe Trahan Securities"
+    },
+    {
+        "input_name": "Wunderlich Securities Inc",
+        "output_name": "Wunderlich Securities Inc"
+    },
+    {
+        "input_name": "Wunderlich Securities Inc.",
+        "output_name": "Wunderlich Securities Inc"
+    },
+    {
+        "input_name": "Wunderlich SecuritiesInc.",
+        "output_name": "Wunderlich Securities Inc"
+    },
+    {
+        "input_name": "Zelman Partners LLC",
+        "output_name": "Zelman Partners LLC"
+    }
+]

@@ -1,7 +1,7 @@
 import { fetchSectorData } from './sectors';
 import { getNonConsolidatedBanks } from "./_helperFunctions"
 
-export const getIpoFeesByYear = async (data, year, bank, sectorLookupCodes) => {
+export const getIpoFeesByYear = (data, year, bank, sectorLookupCodes) => {
     const years = [parseInt(year) - 2, parseInt(year) - 1, parseInt(year)]
     let ipoFeesPerDeal = [];
     let ipoFeesByYear = {};
@@ -34,8 +34,7 @@ export const getIpoFeesByYear = async (data, year, bank, sectorLookupCodes) => {
                 ipoFeesPerDeal.push(commissionLineItem);
             }
         } else if (sectorLookupCodes === undefined){
-            let bankLookupNames = await getNonConsolidatedBanks(bank); 
-
+            let bankLookupNames = getNonConsolidatedBanks(bank); 
             for (let y = 0; y < bankLookupNames.length; y++){
                 let lookupName = bankLookupNames[y];
 
