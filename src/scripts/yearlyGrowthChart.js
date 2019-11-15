@@ -95,7 +95,6 @@ export const yearlyGrowthChart = (dataset) => {
             return (275/2 + 58/2 + 275 * i + 68.75 * (i + 1) ) 
         })
         .attr("y", function(d) {
-            console.log(yScale(d.fees))
             return yScale(d.fees) - 5
         })
         .text(function(d) {

@@ -15,9 +15,15 @@
     <h1>Intelligent IB</h1>
     <div class="description">
         <p>
-        U.S. Securities Exchange Commision (SEC) publishes all forms submitted by firms whose securities are publicly traded on
-        its <a href="https://www.sec.gov/edgar/searchedgar/companysearch.html">EDGAR platform</a>. Particularly, firms that wish to file for an initial public offering have to file prospectuses pursuant to filing rule 424B4. 
-        These prospectuses lay out key information on the offering, including the amount of capital raised, the sector of the company, underwriters for the offering, and their commissions.
+            Intelligent IB is a data visualizer designed for investment banks to monitor initial public offering (IPO) activity in the U.S. Sectors are based
+            on North American Industry Classification System (NAICS). Fees only include underwriting commissions and are in USD
+            millions.
+            <br>
+            <br>
+            U.S. Securities Exchange Commision (SEC) publishes all forms submitted by firms whose securities are publicly traded on
+            its <a href="https://www.sec.gov/edgar/searchedgar/companysearch.html">EDGAR platform</a>. Firms that wish to file for an IPO have to file prospectuses pursuant to filing rule 424B4. 
+            These prospectuses lay out key information on the offering, including the amount of capital raised, the sector of the company, underwriters for the offering, and their commissions. All of the displayed data is sourced from these filings.
+
         </p>
     </div>
     <nav class="top-nav-bar">
@@ -26,9 +32,9 @@
             <form id="analysis-type-selector">
                 <input type="radio" id="radio1" name="analysis-type" value="Sector"></input>
                 <label for="radio1">Sector</label>
-<!-- 
+
                 <input type="radio" id="radio2" name="analysis-type" value="Issuer" ></input>
-                <label for="radio2">Issuer</label> -->
+                <label for="radio2">Issuer</label>
 
                 <input type="radio" id="radio3" name="analysis-type" value="Bank"></input>
                 <label for="radio3">Bank</label>
@@ -63,8 +69,6 @@
         </div>
         <section id="table-container"></section>
     </div>
-
-
 
     <script src="./dist/main.js"></script>
 </body>

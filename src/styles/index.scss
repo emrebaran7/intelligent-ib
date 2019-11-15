@@ -115,7 +115,7 @@ nav{
     border: 2px solid #66bfc4;
     color: #25a4ab;
     border-radius: 4px;
-    min-width: 25%;
+    min-width: 15%;
 }
 
 #analysis-type-selector input[type="radio"]:checked + label {
@@ -186,14 +186,18 @@ nav{
 #table-container{
     margin: 0 auto;
     border: solid #66bfc4 2px;
-    background:  #66bfc4;
+    background:  #30878b;
     box-sizing: border-box;
-    border-radius: 10px;
+    border-radius: 4px;
     padding: 3%;
-    color: black;
+    color:  #ddd;
     align-self: center;
     margin: 1%;
+    height: 562px ;
+
 }
+
+
 
 #bar-chart{
     background-color: #ddd;
@@ -205,4 +209,8 @@ nav{
 
 text{
     font-size: 16px;
+}
+
+td{
+    padding: 5px;
 }
