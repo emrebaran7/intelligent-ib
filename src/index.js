@@ -14,7 +14,7 @@ require("babel-polyfill");
  
 //data
 const data = require('../assets/data/processed/new_data.json')
-console.log(getMissingBanks(data)); 
+// console.log(getMissingBanks(data)); 
 
 //relevant containers
 let radioForm = document.getElementById("analysis-type-selector");
