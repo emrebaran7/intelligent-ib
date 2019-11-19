@@ -11,7 +11,7 @@ import { topIssuersTable } from "./scripts/issuersChart";
 import { yearlyGrowthChart } from "./scripts/yearlyGrowthChart";
 import { getMissingBanks} from "./scripts/temp"
 require("babel-polyfill");
-
+ 
 //data
 const data = require('../assets/data/processed/new_data.json')
 // console.log(getMissingBanks(data)); 
