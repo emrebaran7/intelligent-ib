@@ -13,7 +13,6 @@ class String
         array.any? {|i| self.include? i}
     end
 end
-
 def get_company_info(sec_header)
     company_info = {:company_name => nil, :CIK => nil, :SIC => nil}
     parsed_sec_header = sec_header.text.gsub('\n','').split("\t").reject{|el| el == ""}

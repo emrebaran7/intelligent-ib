@@ -1,36 +1,25 @@
+import {getConsolidatedBankNames} from "./_helperFunctions"
 
-var d3 = require("d3");
-var fs = require("fs");
+const data = require("../../assets/data/processed/new_data.json")
 
-async function getNonConsolidatedBanksforAll() {
-    const consolidatedBanksNames = {}
-    const data = await d3.csv("assets/data/raw/bank-name-consol.csv")
-    for (const datum of data) {
-        const row = datum;
-        const key = row["input_name"];
-        const value = (row["output_name"]);
-        consolidatedBanksNames[key] = value;
-    }
-    const bankNamesArray = Object.entries(consolidatedBanksNames);
+export function getMissingBanks(data){
+    const consolidatedBankNames = getConsolidatedBankNames();
+    const missingBanks = []
 
-    const dict = {}
-    for (let i = 0; i < bankNamesArray.length; i++) {
-        let key2 = bankNamesArray[i][1]
-        dict[key2] = [];
-    }
-
-    for (let i = 0; i < bankNamesArray.length; i++) {
-        let key3 = bankNamesArray[i][1]
-        let val3 = bankNamesArray[i][0]
-        dict[key3].push(val3);
+    for (let i = 0; i < data.length; i++){
+        let underwriters = data[i].underwriters;
+        let bankNames;
+        if (underwriters !== null) {bankNames = Object.keys(underwriters)}
+        
+        if (bankNames !== undefined) {
+            for (let y = 0; y < bankNames.length; y++ ){
+                let bank = bankNames[y];
+                if (consolidatedBankNames[bank] === undefined) {missingBanks.push(bank);}
+            }
+        }
     }
 
-    return dict;
+    console.log(missingBanks)
+    return missingBanks;
 }
 
-getNonConsolidatedBanksforAll().then( obj => {
-    fs.writeFile("/Users/emreersolmaz/Desktop/Intelligent-IB/assets/data/processed/consolidatedBankNameReversion.json", obj, (err) => {
-        if (err) throw err;
-        console.log('Succes')
-    })
-}

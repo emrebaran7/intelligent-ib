@@ -9,24 +9,30 @@ import { getBanks } from "./scripts/banks";
 import { leagueTable } from "./scripts/underwritersChart";
 import { topIssuersTable } from "./scripts/issuersChart";
 import { yearlyGrowthChart } from "./scripts/yearlyGrowthChart";
+import { getMissingBanks} from "./scripts/temp"
 require("babel-polyfill");
 
 //data
 const data = require('../assets/data/processed/new_data.json')
+// console.log(getMissingBanks(data)); 
 
 //relevant containers
 let radioForm = document.getElementById("analysis-type-selector");
 let barChartContainer = document.getElementById("bar-chart");
 let tableContainer = document.getElementById("table-container");
-let yearSelector = document.getElementById("year-selection");
+let yearSelector = document.getElementById("year-selector");
+let yearSelection = document.getElementById("year-selection");
 let analyticsContainer = document.getElementById("analytics-container");
 let searchBarHeader = document.getElementById("search-bar-header");
 let searchBarContainer = document.getElementById("search-bar-container");
 let mySearchInput = document.getElementById("my-search-input");
 let searchForm = document.getElementById("search-form");
 
+// common helper elements
+let tableLength = 10; 
+
 // reset when clicked on year
-yearSelector.onclick = function() {
+yearSelection.onclick = function() {
     barChartContainer.innerHTML = "";
     tableContainer.innerHTML = "";
     analyticsContainer.style.visibility = "hidden"
@@ -39,7 +45,7 @@ for (let i = 0; i < radioForm.length; i++) {
 
     currentRadio.onclick = function() {
         searchBarHeader.innerHTML = `Enter ${ this.value }:`
-        yearSelector.style.visibility = 'visible';
+        yearSelection.style.visibility = 'visible';
         searchBarContainer.style.visibility = 'visible';
         analyticsContainer.style.visibility = "hidden";
         tableContainer.style.visibility = "hidden";
@@ -60,6 +66,7 @@ for (let i = 0; i < radioForm.length; i++) {
                 autocomplete(document.getElementById("my-search-input"), banks);
             })
         } else if (this.value === 'Issuer') { 
+            yearSelection.style.visibility = 'hidden';
             mySearchInput.placeholder = `Enter ${this.value} Name` 
             const companies = [...new Set(getCompanies(data))];
             autocomplete(document.getElementById("my-search-input"), companies);
@@ -73,8 +80,10 @@ searchForm.submit.addEventListener("click", async function (event) {
         barChartContainer.innerHTML = "";
         tableContainer.innerHTML = "";
     }
+    
+    yearSelection.style.visibility = "hidden"
 
-    let year = yearSelector.value
+    let year = yearSelection.value
     
     let selectedRadio; 
     for (let i = 0; i < radioForm.length; i++) {
@@ -98,7 +107,6 @@ searchForm.submit.addEventListener("click", async function (event) {
 
         //table
         let lt = await leagueTable(data, lookupCodes, "undefined", year);
-        let tableLength = 10; 
         if (lt.length < 10) {tableLength = lt.length}
         
         let html = `<h2>${year} Fees to Top ${tableLength} Underwriters in ${sector}</h2><table><tr>`;
@@ -116,8 +124,9 @@ searchForm.submit.addEventListener("click", async function (event) {
         let bank = mySearchInput.value;
 
         //table
-        let topIssuers = await topIssuersTable(data, bank, year);
-        let tableLength = topIssuers.length
+        let topIssuers = await topIssuersTable(data, bank, year); 
+        if (topIssuers.length < 10) { tableLength = lt.length }
+
         let html = `<h2>${bank}'s Top ${tableLength} Fee-Payers in ${year}</h2><table><tr>`;
         html += createTable(topIssuers)
         tableContainer.style.visibility = "visible"
@@ -129,15 +138,19 @@ searchForm.submit.addEventListener("click", async function (event) {
         yearlyGrowthChart(ipoFeesByYear);
 
     } else if (selectedRadio === 'Issuer') {
+        yearSelector.style.visibility = "hidden"
+        yearSelection.style.visibility = "hidden"
+
         //process issuer based league table
         let company = document.getElementById("my-search-input").value;
         
         //table
         let lt = await leagueTable(data, "undefined", company, year);
-        debugger
+        if (lt.length < 10) { tableLength = lt.length }
 
-        let html = `<h2> ${company}'s Fees to Underwriters</h2><table><tr>`;
+        let html = `<h2> ${company}'s Top ${tableLength} IPO Underwriters</h2><table><tr>`;
         html += createTable(lt);
+        tableContainer.style.visibility = "visible"
         tableContainer.innerHTML = html;
     };
 }); 

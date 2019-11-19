@@ -2,13 +2,15 @@ import { sectorDescriptionToCode } from '../scripts/sectors';
 import { capitalize } from './_helperFunctions';
 import { fetchData } from './banks';
 import { stylizeString, alphaNumerizer } from "./stylizeBankNames";
+import {getConsolidatedBankNames} from "./_helperFunctions"
 
-export const leagueTable = async (data, lookupCodes, company, yearInput) => {
-    const consolidatedBanksNames = await fetchData();
+export const leagueTable = (data, lookupCodes, company, yearInput) => {
+    const consolidatedBanksNames = getConsolidatedBankNames();
 
     if (lookupCodes === "undefined") {
         let commissionPerBank = [];
         for (let y = 0; y < data.length; y++) {
+
             let issuer = data[y].company_name;
             if (capitalize(issuer) === capitalize(company)) {
                 let underwriters = data[y].underwriters;
@@ -21,9 +23,17 @@ export const leagueTable = async (data, lookupCodes, company, yearInput) => {
                     commissionPerBank.push(pushable);
                 }
             }
-        }
-        
+        } 
+
+        commissionPerBank.sort((a, b) => {
+            if (Object.values(a)[0] > Object.values(b)[0]) {
+                return -1;
+            } else {
+                return 1;
+            }
+        })
         return commissionPerBank;
+
     } else if (company === "undefined"){
         let commissionPerBank = {};
         for (let z = 0; z < data.length; z++) {

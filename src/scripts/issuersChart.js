@@ -36,7 +36,6 @@ export const topIssuersTable = async (data, bankInput, yearInput) => {3
                     commissionPerIssuer.push(pushable);
                 }
             }        
-
         }
     }
 

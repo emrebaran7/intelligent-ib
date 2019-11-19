@@ -37,3 +37,15 @@ export function getNonConsolidatedBanks(bankName) {
 
     return outputArray;
 } 
+
+export function getConsolidatedBankNames(bankName) {
+    const data = require("../../assets/data/processed/bank-name-consol.json")
+    const consolidatedBanksNames = {};
+    for (const datum of data) {
+        const row = datum;
+        const key = row["input_name"];
+        const value = (row["output_name"]);
+        consolidatedBanksNames[key] = value;
+    }
+    return consolidatedBanksNames;
+} 
