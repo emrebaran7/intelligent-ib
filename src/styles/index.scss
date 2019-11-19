@@ -214,3 +214,28 @@ text{
 td{
     padding: 5px;
 }
+
+footer{
+    border: solid #66bfc4 2px;
+    margin: 1%;
+    display: flex;
+    border-radius: 4px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.contact-icons{
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-icons a{
+  padding: 10px;
+}
+
+.my-search-inputautocomplete-list div{
+    position: absolute;
+    z-index:100;
+}

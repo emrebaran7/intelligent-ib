@@ -14,7 +14,7 @@ require("babel-polyfill");
  
 //data
 const data = require('../assets/data/processed/new_data.json')
-// console.log(getMissingBanks(data)); 
+console.log(getMissingBanks(data)); 
 
 //relevant containers
 let radioForm = document.getElementById("analysis-type-selector");
@@ -44,11 +44,15 @@ for (let i = 0; i < radioForm.length; i++) {
     let currentRadio = radioForm[i];
 
     currentRadio.onclick = function() {
-        searchBarHeader.innerHTML = `Enter ${ this.value }:`
-        yearSelection.style.visibility = 'visible';
+        searchBarHeader.innerHTML = `Enter ${ this.value }:`;
         searchBarContainer.style.visibility = 'visible';
         analyticsContainer.style.visibility = "hidden";
         tableContainer.style.visibility = "hidden";
+        
+        //yearSelector visibility
+        if (this.value === "Sector" || this.value === "Bank") {
+            yearSelector.style.visibility = 'visible';
+        } else {yearSelector.style.visibility = 'hidden'}
 
         if (barChartContainer !== undefined && barChartContainer !== null){
             barChartContainer.innerHTML = "";
@@ -59,6 +63,10 @@ for (let i = 0; i < radioForm.length; i++) {
         if (this.value === 'Sector') { 
             mySearchInput.placeholder = `Enter ${this.value}` 
             autocomplete(document.getElementById("my-search-input"), majorSectorGroups);
+            
+            // when you clik on the search bar you should see all options
+
+
         } else if (this.value === 'Bank') { 
             mySearchInput.placeholder = `Enter ${this.value} Name` ;
             const uniqueBanksInput = getUniqueBanksInput(data); 
@@ -66,7 +74,6 @@ for (let i = 0; i < radioForm.length; i++) {
                 autocomplete(document.getElementById("my-search-input"), banks);
             })
         } else if (this.value === 'Issuer') { 
-            yearSelection.style.visibility = 'hidden';
             mySearchInput.placeholder = `Enter ${this.value} Name` 
             const companies = [...new Set(getCompanies(data))];
             autocomplete(document.getElementById("my-search-input"), companies);
@@ -80,8 +87,6 @@ searchForm.submit.addEventListener("click", async function (event) {
         barChartContainer.innerHTML = "";
         tableContainer.innerHTML = "";
     }
-    
-    yearSelection.style.visibility = "hidden"
 
     let year = yearSelection.value
     
@@ -125,7 +130,8 @@ searchForm.submit.addEventListener("click", async function (event) {
 
         //table
         let topIssuers = await topIssuersTable(data, bank, year); 
-        if (topIssuers.length < 10) { tableLength = lt.length }
+        debugger
+        if (topIssuers.length < 10) { tableLength = topIssuers.length }
 
         let html = `<h2>${bank}'s Top ${tableLength} Fee-Payers in ${year}</h2><table><tr>`;
         html += createTable(topIssuers)
@@ -138,9 +144,6 @@ searchForm.submit.addEventListener("click", async function (event) {
         yearlyGrowthChart(ipoFeesByYear);
 
     } else if (selectedRadio === 'Issuer') {
-        yearSelector.style.visibility = "hidden"
-        yearSelection.style.visibility = "hidden"
-
         //process issuer based league table
         let company = document.getElementById("my-search-input").value;
         

@@ -1,5 +1,9 @@
 [
     {
+        "input_name": "A.G.P.",
+        "output_name": "A.G.P./Alliance Global Partners"
+    },
+    {
         "input_name": "A.G.P./Alliance Global Partners",
         "output_name": "A.G.P./Alliance Global Partners"
     },
@@ -145,6 +149,10 @@
     },
     {
         "input_name": "Banco BTG Pactual S.A.Cayman Branch",
+        "output_name": "Banco BTG Pactual S.A.Cayman Branch"
+    },
+    {
+        "input_name": "Banco BTG Pactual S.A.Cayman Branch",
         "output_name": "Banco BTG Pactual S.A.Cayman Branch"
     },
     {
@@ -794,10 +802,6 @@
     {
         "input_name": "DBS Bank Ltd.",
         "output_name": "DBS Bank Ltd."
-    },
-    {
-        "input_name": "31-Dec",
-        "output_name": "31-Dec"
     },
     {
         "input_name": "Deutsche Bank Securities",
@@ -2305,6 +2309,10 @@
     },
     {
         "input_name": "Sandler ONeill & Partners L.P.",
+        "output_name": "Sandler O'Neill & Partners L.P."
+    },
+    {
+        "input_name": "Sandler ONeill & Partners L.P.",
         "output_name": "Sandler O'Neill & Partners L.P."
     },
     {
