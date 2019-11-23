@@ -107,18 +107,29 @@ for (let i = 0; i < radioForm.length; i++) {
             //clear when type
             mySearchInput.addEventListener("input", function(event){
                 let sectorList = document.getElementById("onclick-sector-name-list");
-
                 sectorList.innerHTML = ""
             })
 
 
         } else if (this.value === 'Bank') { 
+            mySearchInput.addEventListener("click", function (event) {
+                let sectorList = document.getElementById("onclick-sector-name-list");
+                sectorList.innerHTML = ""
+            })
+
             mySearchInput.placeholder = `Enter ${this.value} Name` ;
             const uniqueBanksInput = getUniqueBanksInput(data); 
             getBanks(uniqueBanksInput).then(banks => {
                 autocomplete(document.getElementById("my-search-input"), banks);
             })
         } else if (this.value === 'Issuer') { 
+            mySearchInput.addEventListener("click", function (event) {
+                let sectorList = document.getElementById("onclick-sector-name-list");
+                sectorList.innerHTML = ""
+            })
+            
+            let sectorList = document.getElementById("onclick-sector-name-list");
+            sectorList.innerHTML = ""
             mySearchInput.placeholder = `Enter ${this.value} Name` 
             const companies = [...new Set(getCompanies(data))];
             autocomplete(document.getElementById("my-search-input"), companies);
