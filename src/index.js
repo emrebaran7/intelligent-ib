@@ -60,11 +60,56 @@ for (let i = 0; i < radioForm.length; i++) {
         }
 
         //searchbars
-        if (this.value === 'Sector') { 
+        if (currentRadio.value === 'Sector') { 
             mySearchInput.placeholder = `Enter ${this.value}` 
-            autocomplete(document.getElementById("my-search-input"), majorSectorGroups);
+            autocomplete(document.getElementById("my-search-input"), majorSectorGroups);     
             
-            // when you clik on the search bar you should see all options
+
+            // when you click on the search bar you should see all options
+            mySearchInput.addEventListener("click", function(event) {
+                let sectorList = document.getElementById("onclick-sector-name-list");
+                sectorList.innerHTML = "";
+                for (let i = 0; i < majorSectorGroups.length; i++) {
+                    let node = document.createElement("DIV");
+                    let textnode = document.createTextNode(majorSectorGroups[i]);
+                    node.appendChild(textnode);
+                    sectorList.appendChild(node)
+                    node.setAttribute("class", 'sector-items')
+
+                    // enables selection in dropdown
+                    node.addEventListener('click', function(event) {
+                        mySearchInput.value = textnode.wholeText;
+                        sectorList.innerHTML = "";
+                        
+                    })
+
+                    mySearchInput.addEventListener('keydown', function (event) {
+                        if (event.key === "Escape") {
+                            sectorList.innerHTML = "";
+                        }
+                    })
+
+                }   
+                
+                function closeAllLists(elmnt) {
+                    let sectorItems = document.getElementsByClassName("sector-items");
+                    for (let i = 0; i < sectorItems.length; i++) {
+                        sectorItems[i].parentNode.removeChild(sectorItems[i]);
+                    }
+                }
+
+                // document.addEventListener("click", function (e) {
+                //     debugger
+                //     closeAllLists(e.target);
+                // });
+            })
+            
+            //clear when type
+            mySearchInput.addEventListener("input", function(event){
+                let sectorList = document.getElementById("onclick-sector-name-list");
+
+                sectorList.innerHTML = ""
+            })
 
 
         } else if (this.value === 'Bank') { 

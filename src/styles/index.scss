@@ -235,7 +235,17 @@ footer{
   padding: 10px;
 }
 
-.my-search-inputautocomplete-list div{
+#my-search-inputautocomplete-list div{
     position: absolute;
     z-index:100;
+
+}
+
+.sector-items{
+    position: absolute;
+    z-index:100;
+}
+
+#onclick-sector-name-list{
+    min-height: fit-content;
 }

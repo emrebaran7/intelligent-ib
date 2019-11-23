@@ -8,7 +8,14 @@ d3.csv("assets/data/raw/SIC/SIC to NAICS.csv").then(function (data) {
             majorSectorGroups.push(data[i].Industry);
         }
     }
+    
+    majorSectorGroups.sort(function(a,b) {
+        if (a > b) {return 1};
+        if (a < b) {return -1};
+        return 0;
+    })
 });
+
 
 export async function fetchSectorData() {
     const sicCodesToIndustry = []
