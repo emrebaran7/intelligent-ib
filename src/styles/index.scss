@@ -235,11 +235,12 @@ footer{
   padding: 10px;
 }
 
-#my-search-inputautocomplete-list div{
+#my-search-inputautocomplete-list{
     position: absolute;
     z-index:100;
 }
-.sector-items{
+
+#onclick-sector-name-list{
     position: absolute;
     z-index:100;
 }
